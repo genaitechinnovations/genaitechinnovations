@@ -1286,6 +1286,23 @@
 .testimonial-card.featured:hover {
     transform: translateY(-8px) rotate(0deg) scale(1.02);
 }        
+
+/* Example of styling the outer container. 
+   This won't change the calendar's dark colors, 
+   but it will control the space around it. */
+.meetings-iframe-container {
+    /* Set a specific size if needed, though HubSpot often manages this */
+     width: 100%;    
+    height: auto;
+    
+    /* Add a clean, white background for the container */
+   background-color: #ffffff; 
+    
+    /* Add a border or box-shadow to make it look intentionally contained */
+     border: 1px solid #ddd;
+    border-radius: 8px; 
+     overflow: hidden; 
+}
     </style>
 </head>
 <body>    
@@ -1738,13 +1755,18 @@
                     <span>arun@genaitechinnovations.com</span>
                 </a>
             </div>
-
+            <div>
+                <!-- Start of Meetings Embed Script -->
+                <div class="meetings-iframe-container" data-src="https://meetings-ap1.hubspot.com/arun-raj?embed=true"></div>
+                <script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
+                <!-- End of Meetings Embed Script --> 
+            </div>
+            &nbsp;
             <div class="contact-links fade-in fade-in-delay-4">
                 <a href="https://www.linkedin.com/in/arun-raj-023b7836/" target="_blank" class="contact-link">
                     <span>💼</span>
                     <span>Connect on LinkedIn</span>
                 </a>
-                
                 <a href="https://www.linkedin.com/in/arun-raj-023b7836/recent-activity/articles/" target="_blank" class="contact-link">
                     <span>📚</span>
                     <span>Read My Articles</span>
