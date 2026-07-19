@@ -65,8 +65,15 @@
     border-bottom: 1px solid var(--line);
   }
   nav .wrap { display: flex; align-items: center; justify-content: space-between; padding: 18px 32px; }
-  .brand { display: flex; align-items: center; text-decoration: none; }
+  .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
   .brand img { height: 34px; width: auto; display: block; }
+  .brand-name {
+    font-family: "Fraunces", serif; font-size: 17px; font-weight: 600;
+    color: var(--ink); letter-spacing: -0.005em; white-space: nowrap;
+  }
+  @media (max-width: 560px) {
+    .brand-name { display: none; }
+  }
   .nav-links { display: flex; gap: 32px; list-style: none; margin: 0; padding: 0; }
   .nav-links a { text-decoration: none; font-size: 14.5px; color: var(--ink-soft); }
   .nav-links a:hover { color: var(--accent); }
@@ -444,7 +451,10 @@
 
 <nav>
   <div class="wrap">
-    <a class="brand" href="#hero"><img src="https://genaitechinnovations.com/Images/GTI_logo.png" alt="GenAI Tech Innovations"></a>
+    <a class="brand" href="#hero">
+      <img src="https://genaitechinnovations.com/Images/GTI_logo.png" alt="GenAI Tech Innovations">
+      <span class="brand-name">GenAI Tech Innovations</span>
+    </a>
     <ul class="nav-links">
       <li><a href="#services">Services</a></li>
       <li><a href="#architecture">Architecture</a></li>
