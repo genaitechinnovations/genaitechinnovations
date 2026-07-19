@@ -66,24 +66,55 @@
     backdrop-filter: blur(6px);
     border-bottom: 1px solid var(--line);
   }
-  nav .wrap { display: flex; align-items: center; justify-content: space-between; padding: 18px 32px; }
+  nav .nav-inner { display: flex; align-items: center; justify-content: space-between; padding: 18px 32px; position: relative; }
   .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
   .brand img { height: 34px; width: auto; display: block; }
   .brand-name {
     font-family: "Fraunces", serif; font-size: 17px; font-weight: 600;
     color: var(--ink); letter-spacing: -0.005em; white-space: nowrap;
   }
-  @media (max-width: 560px) {
-    .brand-name { display: none; }
-  }
   .nav-links { display: flex; gap: 32px; list-style: none; margin: 0; padding: 0; }
   .nav-links a { text-decoration: none; font-size: 14.5px; color: var(--ink-soft); }
   .nav-links a:hover { color: var(--accent); }
+  .nav-cta-mobile { display: none; }
+  .nav-right { display: flex; align-items: center; gap: 14px; }
   .nav-cta {
     font-size: 14px; font-weight: 500; text-decoration: none;
     border: 1px solid var(--ink); padding: 9px 18px; border-radius: 2px;
+    white-space: nowrap;
   }
   .nav-cta:hover { background: var(--ink); color: var(--paper); }
+  .nav-toggle {
+    display: none; flex-direction: column; justify-content: center; gap: 5px;
+    width: 34px; height: 34px; background: none; border: none; cursor: pointer; padding: 0;
+  }
+  .nav-toggle span {
+    display: block; width: 20px; height: 2px; background: var(--ink); margin: 0 auto;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+  }
+  .nav-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .nav-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+  .nav-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  @media (max-width: 700px) {
+    .nav-toggle { display: flex; }
+    .nav-right .nav-cta { display: none; }
+    .nav-links {
+      display: none;
+      position: absolute; top: 100%; left: 0; right: 0;
+      flex-direction: column; gap: 0;
+      background: var(--paper); border-bottom: 1px solid var(--line);
+      box-shadow: 0 12px 24px rgba(20,24,31,0.08);
+    }
+    .nav-links.is-open { display: flex; }
+    .nav-links li { width: 100%; }
+    .nav-links a { display: block; padding: 16px 32px; border-bottom: 1px solid var(--line); font-size: 15px; }
+    .nav-cta-mobile { display: block; }
+    .nav-cta-mobile a { color: var(--accent); font-weight: 500; }
+  }
+  @media (max-width: 360px) {
+    .brand-name { display: none; }
+  }
 
   /* HERO */
   .hero { padding: 88px 0 64px; border-bottom: 1px solid var(--line); }
@@ -126,6 +157,7 @@
     letter-spacing: 0.04em; color: var(--muted);
   }
   .conversation-body {
+    position: relative;
     padding: 22px 20px; display: flex; flex-direction: column; gap: 12px;
     max-height: 460px; overflow-y: auto; overflow-x: hidden;
     scroll-behavior: smooth;
@@ -280,8 +312,6 @@
   }
   @media (max-width: 760px) {
     .arch-text, .arch-text-sm { font-size: 10px; }
-    .about-grid { grid-template-columns: 1fr; }
-    .about-grid img { width: 120px; height: 120px; }
   }
 
   /* PARTNER STRIP */
@@ -354,6 +384,13 @@
   .credential-strip span {
     font-family: "IBM Plex Mono", monospace; font-size: 12px; border: 1px solid var(--line);
     padding: 7px 12px; border-radius: 2px; color: var(--ink-soft);
+  }
+  @media (max-width: 760px) {
+    .about-grid { display: block; }
+    .about-grid img {
+      float: left; width: 96px; height: 96px; margin: 0 16px 12px 0;
+    }
+    .credential-strip { clear: both; }
   }
 
   /* TESTIMONIALS */
@@ -457,18 +494,24 @@
 <body>
 
 <nav>
-  <div class="wrap">
+  <div class="wrap nav-inner">
     <a class="brand" href="#hero">
       <img src="https://genaitechinnovations.com/Images/GTI_logo.png" alt="GenAI Tech Innovations">
-      <span class="brand-name">GenAI Tech Innovations</span>
+      <span class="brand-name"><span style="color:#ef4444">GenAI</span> Tech Innovations</span>
     </a>
-    <ul class="nav-links">
+    <ul class="nav-links" id="navLinks">
       <li><a href="#services">Services</a></li>
       <li><a href="#architecture">Architecture</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#recognition">Recognition</a></li>
+      <li class="nav-cta-mobile"><a href="#contact">Contact</a></li>
     </ul>
-    <a class="nav-cta" href="#contact">Contact</a>
+    <div class="nav-right">
+      <a class="nav-cta" href="#contact">Contact</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
 </nav>
 
@@ -835,6 +878,32 @@
 <footer>
   GenAI Tech Innovations — Sydney, Australia · <a href="https://www.linkedin.com/company/genai-tech-innovations/">LinkedIn</a>
 </footer>
+
+<script>
+(function () {
+  var toggle = document.getElementById('navToggle');
+  var links = document.getElementById('navLinks');
+  if (!toggle || !links) return;
+
+  function closeMenu() {
+    links.classList.remove('is-open');
+    toggle.setAttribute('aria-expanded', 'false');
+  }
+  function openMenu() {
+    links.classList.add('is-open');
+    toggle.setAttribute('aria-expanded', 'true');
+  }
+
+  toggle.addEventListener('click', function () {
+    var isOpen = links.classList.contains('is-open');
+    if (isOpen) { closeMenu(); } else { openMenu(); }
+  });
+
+  links.querySelectorAll('a').forEach(function (a) {
+    a.addEventListener('click', closeMenu);
+  });
+})();
+</script>
 
 <script>
 (function () {
