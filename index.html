@@ -404,6 +404,34 @@
     .credential-strip { clear: both; }
   }
 
+  /* TEAM */
+  .team-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;
+  }
+  .team-card {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 10px;
+    padding: 26px;
+  }
+  .team-avatar {
+    width: 44px; height: 44px; border-radius: 50%;
+    background: var(--accent-soft); color: var(--accent);
+    font-family: "IBM Plex Mono", monospace; font-weight: 500; font-size: 15px;
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 16px;
+  }
+  .team-card h3 { font-size: 18px; margin-bottom: 4px; }
+  .team-role {
+    display: block; font-family: "IBM Plex Mono", monospace; font-size: 12px;
+    color: var(--accent); margin-bottom: 12px;
+  }
+  .team-card p { color: var(--ink-soft); font-size: 14px; margin: 0; }
+  @media (max-width: 860px) {
+    .team-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 480px) {
+    .team-grid { grid-template-columns: 1fr; }
+  }
+
   /* TESTIMONIALS */
   .quote-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
   .quote-card { background: var(--panel); padding: 32px; }
@@ -514,6 +542,7 @@
       <li><a href="#services">Services</a></li>
       <li><a href="#partners">Partnerships</a></li>
       <li><a href="#about">About</a></li>
+      <li><a href="#team">Team</a></li>
       <li><a href="#recognition">Recognition</a></li>
       <li class="nav-cta-mobile"><a href="#contact">Contact</a></li>
     </ul>
@@ -872,6 +901,76 @@
         <span>Medallia</span>
         <span>15+ years CX / MR technology</span>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="team">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Team</span>
+      <h2>Who you'll work with</h2>
+      <p>A small, senior bench, not a rotating pool of juniors. Every engagement is staffed by people who have actually built and run this work before.</p>
+    </div>
+
+    <div class="team-grid">
+
+      <div class="team-card">
+        <div class="team-avatar">AR</div>
+        <h3>Arun Raj</h3>
+        <span class="team-role">Solutions Architect / Technology Director</span>
+        <p>15+ years of implementation and end to end project delivery. Owns solution architecture and technical direction across every engagement.</p>
+      </div>
+
+      <div class="team-card">
+        <div class="team-avatar">Y</div>
+        <h3>Yazad</h3>
+        <span class="team-role">Head of Insights</span>
+        <p>15+ years of experience. Leads insights strategy and program direction, connecting research design to what stakeholders actually need to see.</p>
+      </div>
+
+      <div class="team-card">
+        <div class="team-avatar">A</div>
+        <h3>Anand</h3>
+        <span class="team-role">Project Manager</span>
+        <p>13+ years of implementation and project management experience. Runs day to day delivery, keeping programs on schedule from kickoff to launch.</p>
+      </div>
+
+      <div class="team-card">
+        <div class="team-avatar">V</div>
+        <h3>Visu</h3>
+        <span class="team-role">Lead Programmer</span>
+        <p>8 years of survey programming experience. Handles complex survey logic and scripting across Qualtrics and QuestionPro.</p>
+      </div>
+
+      <div class="team-card">
+        <div class="team-avatar">VK</div>
+        <h3>Vikash</h3>
+        <span class="team-role">Lead Programmer, Implementation Engineer</span>
+        <p>8+ years programming adhoc and tracker surveys across Healthcare, PR, and Advertising using Forsta and Dynata CMIX, from advanced quota logic and complex routing to QA and mentoring junior programmers.</p>
+      </div>
+
+      <div class="team-card">
+        <div class="team-avatar">M</div>
+        <h3>Mohammed</h3>
+        <span class="team-role">Full Stack / AI Engineer</span>
+        <p>15+ years of experience. Builds custom agents, integrations, and full stack tooling across the platform.</p>
+      </div>
+
+      <div class="team-card">
+        <div class="team-avatar">H</div>
+        <h3>Harini</h3>
+        <span class="team-role">Power BI Developer, QA</span>
+        <p>8+ years of experience. Builds Power BI dashboards and leads quality assurance across survey and reporting deliverables.</p>
+      </div>
+
+      <div class="team-card">
+        <div class="team-avatar">K</div>
+        <h3>Kodi</h3>
+        <span class="team-role">Senior Tester</span>
+        <p>8+ years of experience. Leads test planning and QA on every survey build before it goes live.</p>
+      </div>
+
     </div>
   </div>
 </section>
