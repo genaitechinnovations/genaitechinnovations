@@ -280,6 +280,8 @@
   }
   @media (max-width: 760px) {
     .arch-text, .arch-text-sm { font-size: 10px; }
+    .about-grid { grid-template-columns: 1fr; }
+    .about-grid img { width: 120px; height: 120px; }
   }
 
   /* PARTNER STRIP */
@@ -340,8 +342,11 @@
   }
 
   /* ABOUT */
-  .about-grid { display: grid; grid-template-columns: 240px 1fr; gap: 48px; align-items: start; }
-  .about-grid img { width: 100%; border-radius: 3px; filter: grayscale(15%); border: 1px solid var(--line); }
+  .about-grid { display: grid; grid-template-columns: 160px 1fr; gap: 40px; align-items: start; }
+  .about-grid img {
+    width: 160px; height: 160px; object-fit: cover;
+    border-radius: 6px; filter: grayscale(15%); border: 1px solid var(--line);
+  }
   .about-name { font-size: 26px; margin-bottom: 4px; }
   .about-role { color: var(--accent); font-family: "IBM Plex Mono", monospace; font-size: 13px; margin-bottom: 20px; display: block; }
   .about-grid p { color: var(--ink-soft); font-size: 16px; margin: 0 0 16px; max-width: 62ch; }
