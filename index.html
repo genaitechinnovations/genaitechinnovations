@@ -1,1987 +1,906 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-    <title>GenAI Tech Innovations | Global GTM Partner | AI Solutions & Enterprise Partnerships</title>
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XS07DH6G3L"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-XS07DH6G3L');
-    </script>    
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "GenAI Tech Innovations",
-      "url": "https://genaitechinnovations.com",
-      "logo": "https://genaitechinnovations.com/Images/GTI_logo.png",
-      "founder": {
-        "@type": "Person",
-        "name": "Arun Raj",
-        "jobTitle": "GenAI Engineer & Applied AI Architect"
-      },
-      "description": "Global GTM Partner specializing in AI solutions, enterprise partnerships, and ANZ market expansion",
-      "serviceArea": {
-        "@type": "Place",
-        "name": "Australia and New Zealand"
-      },
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Partnership & AI Solutions",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Global GTM Partnership",
-              "description": "Strategic channel partnerships for ANZ market expansion"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Enterprise AI Solutions",
-              "description": "Custom AI implementations and Qualtrics expertise"
-            }
-          }
-        ]
-      }
-    }
-    </script>    
-    
-    <link rel="icon" href="https://genaitechinnovations.com/Images/GTI_logo.png" type="image/png">
-    <link rel="apple-touch-icon" href="https://genaitechinnovations.com/Images/GTI_logo.png">
-    <meta name="description" content="GenAI Tech Innovations: Global GTM Partner for AI solutions and enterprise partnerships. Accelerating ANZ market expansion with 15+ years expertise in Qualtrics, AI automation, and strategic channel partnerships.">
-    
-    <!-- Open Graph for social sharing -->
-    <meta property="og:title" content="GenAI Tech Innovations - Global GTM Partner & AI Solutions">
-    <meta property="og:description" content="Strategic channel partnerships and AI solutions for ANZ market expansion. Expert in Qualtrics, enterprise AI, and go-to-market strategies.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://genaitechinnovations.com">
-    <meta property="og:image" content="https://genaitechinnovations.com/Images/GTI_logo.png">
-    
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="GenAI Tech Innovations - Global GTM Partner">
-    <meta name="twitter:description" content="Accelerating ANZ expansion through strategic partnerships and AI innovation. Led by industry-recognized expert Arun Raj.">
-    <meta name="twitter:image" content="https://genaitechinnovations.com/Images/GTI_logo.png">
-    
-    <!-- Additional SEO -->
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://genaitechinnovations.com">
-    <meta name="author" content="Arun Raj">
-    <meta name="keywords" content="Global GTM partner, channel partnerships, ANZ market expansion, AI consulting, Qualtrics expert, enterprise partnerships, go-to-market strategy, startup partnerships, technology partnerships">
-    
-    <!-- Geo-targeting -->
-    <meta name="geo.region" content="AU-NSW">
-    <meta name="geo.placename" content="Sydney">
-    <meta name="geo.position" content="-33.8688;151.2093">
-    <meta name="ICBM" content="-33.8688, 151.2093">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            color: #1a202c;
-            background: #ffffff;
-            overflow-x: hidden;
-        }
-
-        /* Logo Brand Component */
-        .logo-brand {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .brand-logo {
-            width: 40px;
-            height: 40px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .brand-text {
-            display: flex;
-            flex-direction: column;
-            gap: 2px;
-        }
-
-        .brand-name {
-            font-size: 1.4rem;
-            font-weight: 700;
-            color: #1a202c;
-            line-height: 1;
-        }
-
-        .brand-tagline {
-            font-size: 0.75rem;
-            color: #6b7280;
-            font-weight: 500;
-            line-height: 1;
-        }
-
-        /* Fixed Header */
-        .fixed-header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(20px);
-            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-            padding: 1rem 2rem;
-            z-index: 100;
-            transition: all 0.3s ease;
-        }
-
-        .header-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .header-nav {
-            display: flex;
-            gap: 2rem;
-        }
-
-        .header-nav a {
-            color: #4a5568;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s ease;
-            font-size: 0.95rem;
-        }
-
-        .header-nav a:hover {
-            color: #ef4444;
-        }
-
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            .brand-name {
-                font-size: 1.2rem;
-            }
-            
-            .brand-tagline {
-                font-size: 0.7rem;
-            }
-            
-            .header-nav {
-                gap: 1rem;
-            }
-            
-            .header-nav a {
-                font-size: 0.9rem;
-            }
-        }
-
-        /* Animated background elements */
-        .background-elements {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 50%, #e2e8f0 100%);
-            overflow: hidden;
-            transition: all 0.3s ease;
-        }
-
-        /* Interactive network nodes */
-        .bg-network-container {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        .bg-network-node {
-            position: absolute;
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            background: #ef4444;
-            opacity: 0.4;
-            animation: nodeFloat 20s infinite ease-in-out;
-            transition: all 0.3s ease;
-        }
-
-        .bg-network-line {
-            position: absolute;
-            height: 1px;
-            background: linear-gradient(90deg, transparent, #ef4444, transparent);
-            opacity: 0.2;
-            animation: lineGlow 8s infinite ease-in-out;
-            transform-origin: left center;
-        }
-
-        /* Floating code elements */
-        .code-snippets {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        .code-snippet {
-            position: absolute;
-            font-family: 'Monaco', 'Menlo', monospace;
-            font-size: 12px;
-            color: #4a5568;
-            opacity: 0.3;
-            animation: codeFloat 25s infinite linear;
-            white-space: nowrap;
-            user-select: none;
-            pointer-events: none;
-        }
-
-        /* Ripple effects */
-        .ripple-container {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-        }
-
-        .ripple {
-            position: absolute;
-            border: 2px solid #ef4444;
-            border-radius: 50%;
-            opacity: 0;
-            animation: rippleEffect 4s infinite ease-out;
-        }
-
-        /* Keyframe animations */
-        @keyframes nodeFloat {
-            0%, 100% { 
-                transform: translateY(0px) scale(1); 
-                opacity: 0.4;
-            }
-            25% { 
-                transform: translateY(-30px) scale(1.2); 
-                opacity: 0.6;
-            }
-            50% { 
-                transform: translateY(-15px) scale(0.8); 
-                opacity: 0.3;
-            }
-            75% { 
-                transform: translateY(-45px) scale(1.1); 
-                opacity: 0.5;
-            }
-        }
-
-        @keyframes lineGlow {
-            0%, 100% { 
-                opacity: 0.2; 
-                transform: scaleX(1);
-            }
-            50% { 
-                opacity: 0.4; 
-                transform: scaleX(1.1);
-            }
-        }
-
-        @keyframes codeFloat {
-            0% { 
-                transform: translateX(-100px) translateY(100vh) rotate(0deg); 
-                opacity: 0; 
-            }
-            10% { opacity: 0.3; }
-            90% { opacity: 0.3; }
-            100% { 
-                transform: translateX(100px) translateY(-100vh) rotate(360deg); 
-                opacity: 0; 
-            }
-        }
-
-        @keyframes rippleEffect {
-            0% {
-                transform: scale(0);
-                opacity: 0.6;
-            }
-            100% {
-                transform: scale(4);
-                opacity: 0;
-            }
-        }
-
-        .mouse-follower {
-            position: fixed;
-            width: 20px;
-            height: 20px;
-            border: 2px solid red;
-            border-radius: 50%;
-            opacity: 0;
-            pointer-events: none;
-            z-index: 9999;
-            transition: all 0.1s ease;
-           
-        }        
-
-        /* Hero Section */
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            padding: 6rem 2rem 0;
-        }
-
-        .hero-content {
-            max-width: 1200px;
-            text-align: center;
-            z-index: 10;
-        }
-
-        /* Large Logo in Hero */
-        .logo {
-            display: flex;                
-            text-decoration: none;           
-        }  
-
-        .hero-logo {
-            margin-bottom: 3rem;
-        }
-
-        .hero-logo .neural-icon {
-            width: 80px;
-            height: 80px;
-            border-radius: 20px;
-            box-shadow: 0 12px 35px rgba(239, 68, 68, 0.4);
-        }
-
-        .hero-logo .neural-network {
-            width: 48px;
-            height: 48px;
-        }
-
-        .hero-logo .network-node {
-            width: 8px;
-            height: 8px;
-        }
-
-        .hero-logo .neural-text {
-            font-size: 2.8rem;
-            margin-top: 1rem;
-        }
-
-        .hero-badge {
-            display: inline-block;
-            background: linear-gradient(135deg, #ef4444, #dc2626);
-            color: #ffffff;
-            padding: 0.6rem 1.5rem;
-            border-radius: 50px;
-            font-size: 0.9rem;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3);
-            animation: pulse 3s ease-in-out infinite;
-        }
-
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3); }
-            50% { transform: scale(1.05); box-shadow: 0 6px 25px rgba(239, 68, 68, 0.4); }
-        }
-
-        .hero-title {
-            font-size: clamp(2.5rem, 6vw, 4.5rem);
-            font-weight: 800;
-            margin-bottom: 1.5rem;
-            background: linear-gradient(135deg, #1a202c 0%, #2d3748 30%, #ef4444 70%, #dc2626 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            line-height: 1.1;
-        }
-
-        .hero-subtitle {
-            font-size: clamp(1.1rem, 2.5vw, 1.4rem);
-            color: #4a5568;
-            margin-bottom: 3rem;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-            font-weight: 400;
-            line-height: 1.7;
-        }
-
-        .hero-cta {
-            display: flex;
-            gap: 1.5rem;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-bottom: 4rem;
-        }
-
-        .btn {
-            padding: 1rem 2.5rem;
-            border: none;
-            border-radius: 12px;
-            font-size: 1.1rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            display: inline-block;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .btn-primary {
-            background: linear-gradient(135deg, #ef4444, #dc2626);
-            color: #ffffff;
-            box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3);
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(239, 68, 68, 0.4);
-        }
-
-        .btn-secondary {
-            background: #ffffff;
-            color: #ef4444;
-            border: 2px solid #ef4444;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .btn-secondary:hover {
-            background: #fef2f2;
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(239, 68, 68, 0.2);
-        }
-
-        /* Innovation Gallery */
-        .innovation-gallery {
-            padding: 6rem 2rem;
-            background: #ffffff;
-            position: relative;
-        }
-
-        .gallery-container {
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .gallery-header {
-            text-align: center;
-            margin-bottom: 4rem;
-        }
-
-        .gallery-title {
-            font-size: clamp(2rem, 4vw, 3rem);
-            font-weight: 700;
-            margin-bottom: 1rem;
-            color: #1a202c;
-        }
-
-        .gallery-subtitle {
-            font-size: 1.2rem;
-            color: #4a5568;
-            max-width: 600px;
-            margin: 0 auto;
-            line-height: 1.6;
-        }
-
-        .innovations-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .innovation-card {
-            background: #ffffff;
-            border: 1px solid #e2e8f0;
-            border-radius: 20px;
-            padding: 2.5rem;
-            position: relative;
-            overflow: hidden;
-            cursor: pointer;
-            transition: all 0.4s ease;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-        }
-
-        .innovation-card:hover {
-            transform: translateY(-12px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-            border-color: #ef4444;
-        }
-
-        .innovation-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: linear-gradient(90deg, #ef4444, #dc2626, #ef4444);
-            transform: scaleX(0);
-            transition: transform 0.4s ease;
-        }
-
-        .innovation-card:hover::before {
-            transform: scaleX(1);
-        }
-
-        .card-icon {
-            width: 70px;
-            height: 70px;
-            margin-bottom: 1.5rem;
-            border-radius: 16px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2rem;
-            position: relative;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .card-icon.primary {
-            background: linear-gradient(135deg, #ef4444, #dc2626);
-        }
-
-        .card-icon.secondary {
-            background: linear-gradient(135deg, #06b6d4, #0891b2);
-        }
-
-        .card-icon.tertiary {
-            background: linear-gradient(135deg, #8b5cf6, #7c3aed);
-        }
-
-        .card-icon.quaternary {
-            background: linear-gradient(135deg, #f59e0b, #d97706);
-        }
-
-        .card-badge {
-            background: linear-gradient(135deg, #ef4444, #dc2626);
-            color: #ffffff;
-            padding: 0.4rem 1rem;
-            border-radius: 25px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
-            display: inline-block;
-        }
-
-        .card-title {
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            color: #1a202c;
-        }
-
-        .card-description {
-            color: #4a5568;
-            margin-bottom: 1.5rem;
-            line-height: 1.7;
-        }
-
-        .card-stats {
-            display: flex;
-            gap: 1.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .stat {
-            text-align: center;
-        }
-
-        .stat-value {
-            font-size: 1.3rem;
-            font-weight: 700;
-            color: #ef4444;
-            display: block;
-        }
-
-        .stat-label {
-            font-size: 0.8rem;
-            color: #718096;
-            margin-top: 0.2rem;
-        }
-
-        .card-tech {
-            display: flex;
-            gap: 0.5rem;
-            flex-wrap: wrap;
-            margin-top: 1rem;
-        }
-
-        .tech-tag {
-            background: #fef2f2;
-            color: #dc2626;
-            border: 1px solid #fecaca;
-            padding: 0.3rem 0.8rem;
-            border-radius: 15px;
-            font-size: 0.75rem;
-            font-weight: 500;
-        }
-
-        .innovation-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            color: #ef4444;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.95rem;
-            padding: 0.75rem 1.5rem;
-            border: 2px solid #ef4444;
-            border-radius: 12px;
-            transition: all 0.3s ease;
-            background: transparent;
-            margin-top: 0.5rem;
-        }
-
-        .innovation-link:hover {
-            background: #ef4444;
-            color: #ffffff;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3);
-        }
-
-        .innovation-link:hover .arrow {
-            transform: translateX(3px);
-        }
-
-        .innovation-link .arrow {
-            transition: transform 0.3s ease;
-        }        
-
-        /* About Section */
-        .about-section {
-            padding: 6rem 2rem;
-            background: linear-gradient(135deg, #f1f5f9 0%, #ffffff 100%);
-        }
-
-        .about-container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .about-header {
-            text-align: center;
-            margin-bottom: 4rem;
-        }
-
-        .about-title {
-            font-size: clamp(2rem, 4vw, 3rem);
-            font-weight: 700;
-            margin-bottom: 1rem;
-            color: #1a202c;
-        }
-
-        .about-subtitle {
-            font-size: 1.2rem;
-            color: #4a5568;
-            max-width: 700px;
-            margin: 0 auto;
-            line-height: 1.6;
-        }
-
-        .about-content {
-            display: flex;
-            justify-content: center;
-        }
-
-        .about-story {
-            background: #ffffff;
-            border-radius: 24px;
-            padding: 3rem;
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
-            border: 1px solid #e2e8f0;
-            max-width: 800px;
-        }
-
-        .story-header {
-            display: flex;
-            align-items: center;
-            gap: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        .story-avatar {
-            flex-shrink: 0;
-        }
-
-        .story-intro h3 {
-            font-size: 1.4rem;
-            font-weight: 700;
-            color: #1a202c;
-            margin-bottom: 0.5rem;
-        }
-
-        .story-tagline {
-            color: #ef4444;
-            font-weight: 600;
-            font-size: 1rem;
-        }
-
-        .story-content {
-            color: #4a5568;
-            line-height: 1.7;
-            margin-bottom: 2rem;
-            font-size: 1.1rem;
-        }
-
-        .story-quote {
-            background: #fef2f2;
-            border-left: 4px solid #ef4444;
-            padding: 1.5rem;
-            border-radius: 12px;
-            font-style: italic;
-            color: #2d3748;
-            margin-bottom: 2rem;
-            font-size: 1.1rem;
-            position: relative;
-        }
-
-        .story-quote::before {
-            content: '"';
-            position: absolute;
-            left: 1rem;
-            top: 0.5rem;
-            font-size: 2rem;
-            color: #ef4444;
-            font-weight: bold;
-        }
-
-        .story-credentials {
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
-
-        .credential-tag {
-            background: linear-gradient(135deg, #ef4444, #dc2626);
-            color: #ffffff;
-            padding: 0.4rem 1rem;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 600;
-        }
-
-        /* Services Section */
-        .services-section {
-            padding: 6rem 2rem;
-            background: #ffffff;
-        }
-
-        .services-container {
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .services-header {
-            text-align: center;
-            margin-bottom: 4rem;
-        }
-
-        .services-title {
-            font-size: clamp(2rem, 4vw, 3rem);
-            font-weight: 700;
-            margin-bottom: 1rem;
-            color: #1a202c;
-        }
-
-        .services-subtitle {
-            font-size: 1.2rem;
-            color: #4a5568;
-            max-width: 700px;
-            margin: 0 auto;
-            line-height: 1.6;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .service-card {
-            background: #ffffff;
-            border: 1px solid #e2e8f0;
-            border-radius: 20px;
-            padding: 2.5rem;
-            transition: all 0.4s ease;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-        }
-
-        .service-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-            border-color: #ef4444;
-        }
-
-        .service-icon {
-            width: 60px;
-            height: 60px;
-            border-radius: 16px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            margin-bottom: 1.5rem;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .service-title {
-            font-size: 1.3rem;
-            font-weight: 700;
-            color: #1a202c;
-            margin-bottom: 1rem;
-        }
-
-        .service-description {
-            color: #4a5568;
-            line-height: 1.6;
-            margin-bottom: 1.5rem;
-        }
-
-        .service-features {
-            list-style: none;
-            padding: 0;
-        }
-
-        .service-features li {
-            color: #4a5568;
-            margin-bottom: 0.5rem;
-            padding-left: 1.5rem;
-            position: relative;
-        }
-
-        .service-features li::before {
-            content: '▸';
-            color: #ef4444;
-            font-weight: bold;
-            position: absolute;
-            left: 0;
-        }
-
-        /* Contact Section */
-        .contact-section {
-            padding: 6rem 2rem;
-            background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
-            color: #ffffff;
-            text-align: center;
-        }
-
-        .contact-container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .contact-logo {
-            margin-bottom: 2rem;
-        }
-
-        .contact-logo .neural-icon {
-            width: 60px;
-            height: 60px;
-            border-radius: 16px;
-        }
-
-        .contact-logo .neural-network {
-            width: 36px;
-            height: 36px;
-        }
-
-        .contact-logo .network-node {
-            width: 6px;
-            height: 6px;
-        }
-
-        .contact-logo .neural-text {
-            font-size: 1.8rem;
-            color: #ffffff;
-        }
-
-        .contact-title {
-            font-size: clamp(2rem, 4vw, 3rem);
-            font-weight: 700;
-            margin-bottom: 1.5rem;
-            background: linear-gradient(135deg, #ffffff 0%, #ef4444 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .contact-subtitle {
-            font-size: 1.2rem;
-            opacity: 0.9;
-            margin-bottom: 3rem;
-            line-height: 1.6;
-        }
-
-        .contact-email-container {
-            background: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 16px;
-            padding: 2.5rem;
-            margin-bottom: 3rem;
-            backdrop-filter: blur(10px);
-            transition: all 0.3s ease;
-        }
-
-        .contact-email-container:hover {
-            background: rgba(255, 255, 255, 0.15);
-            border-color: #ef4444;
-            box-shadow: 0 8px 30px rgba(239, 68, 68, 0.2);
-        }
-
-        .contact-email {
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: #ef4444;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 1rem;
-            transition: all 0.3s ease;
-        }
-
-        .contact-email:hover {
-            color: #dc2626;
-            transform: translateY(-2px);
-        }
-
-        .email-icon {
-            font-size: 1.8rem;
-        }
-
-        .contact-links {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            flex-wrap: wrap;
-        }
-
-        .contact-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.8rem;
-            color: #ffffff;
-            text-decoration: none;
-            padding: 1rem 2rem;
-            border: 2px solid rgba(255, 255, 255, 0.3);
-            border-radius: 12px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            backdrop-filter: blur(5px);
-        }
-
-        .contact-link:hover {
-            background: rgba(255, 255, 255, 0.1);
-            border-color: #ef4444;
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(239, 68, 68, 0.3);
-        }
-
-        /* Loading Animation */
-        .fade-in {
-            opacity: 0;
-            transform: translateY(30px);
-            animation: fadeInUp 0.8s ease forwards;
-        }
-
-        @keyframes fadeInUp {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .fade-in-delay-1 { animation-delay: 0.2s; }
-        .fade-in-delay-2 { animation-delay: 0.4s; }
-        .fade-in-delay-3 { animation-delay: 0.6s; }
-        .fade-in-delay-4 { animation-delay: 0.8s; }
-        .fade-in-delay-5 { animation-delay: 1.0s; }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .fixed-header {
-                padding: 0.8rem 1rem;
-            }
-
-            .header-nav {
-                display: none;
-            }
-
-            .hero-logo .neural-icon {
-                width: 60px;
-                height: 60px;
-            }
-
-            .hero-logo .neural-text {
-                font-size: 2rem;
-            }
-
-            .hero-cta {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .btn {
-                width: 100%;
-                max-width: 300px;
-            }
-            
-            .innovations-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .card-stats {
-                justify-content: space-around;
-                flex-wrap: wrap;
-            }
-
-            .story-header {
-                flex-direction: column;
-                text-align: center;
-                gap: 1.5rem;
-            }
-
-            .services-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .contact-links {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .contact-link {
-                width: 100%;
-                max-width: 300px;
-                justify-content: center;
-            }
-            .contact-email {
-                font-size: 0.8rem;    
-            }                
-        }
-
-/* Testimonials Section */
-.testimonials-section {
-    padding: 6rem 2rem;
-    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-}
-
-.testimonials-container {
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
-.testimonials-header {
-    text-align: center;
-    margin-bottom: 4rem;
-}
-
-.testimonials-title {
-    font-size: clamp(2rem, 4vw, 3rem);
-    font-weight: 700;
-    margin-bottom: 1rem;
-    color: #1a202c;
-}
-
-.testimonials-subtitle {
-    font-size: 1.2rem;
-    color: #4a5568;
-    max-width: 700px;
-    margin: 0 auto;
-    line-height: 1.6;
-}
-
-.testimonials-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
-}
-
-.testimonial-card {
-    background: #ffffff;
-    border-radius: 20px;
-    padding: 2rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    border: 1px solid #e2e8f0;
-    transition: all 0.4s ease;
-    position: relative;
-    overflow: hidden;
-}
-
-.testimonial-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: linear-gradient(90deg, #ef4444, #dc2626);
-    transform: scaleX(0);
-    transition: transform 0.4s ease;
-}
-
-.testimonial-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-}
-
-.testimonial-card:hover::before {
-    transform: scaleX(1);
-}
-
-/* Featured testimonial (Qualtrics President) */
-.testimonial-card.featured {
-    background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
-    color: #ffffff;
-    grid-column: span 1;
-}
-
-.testimonial-card.featured::before {
-    background: linear-gradient(90deg, #ef4444, #f59e0b, #10b981);
-    transform: scaleX(1);
-}
-
-.testimonial-card.featured .testimonial-text {
-    color: #e2e8f0;
-}
-
-.testimonial-card.featured .author-info h4 {
-    color: #ffffff;
-}
-
-.testimonial-card.featured .author-info p {
-    color: #a0aec0;
-}
-
-/* Enterprise testimonial styling */
-.testimonial-card.enterprise {
-    border: 2px solid #ef4444;
-}
-
-.testimonial-card.enterprise::before {
-    transform: scaleX(1);
-    background: linear-gradient(90deg, #ef4444, #dc2626);
-}
-
-.testimonial-content {
-    margin-bottom: 1.5rem;
-    position: relative;
-}
-
-.quote-mark {
-    font-size: 3rem;
-    color: #ef4444;
-    font-weight: bold;
-    line-height: 1;
-    position: absolute;
-    left: -0.5rem;
-    top: -1rem;
-    opacity: 0.3;
-}
-
-.testimonial-text {
-    font-size: 1rem;
-    line-height: 1.7;
-    color: #4a5568;
-    font-style: italic;
-    margin-left: 1rem;
-    position: relative;
-    z-index: 1;
-}
-
-.testimonial-author {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    border-top: 1px solid #e2e8f0;
-    padding-top: 1rem;
-}
-
-.testimonial-card.featured .testimonial-author {
-    border-top: 1px solid #4a5568;
-}
-
-.author-info h4 {
-    font-size: 1rem;
-    font-weight: 600;
-    color: #1a202c;
-    margin-bottom: 0.25rem;
-}
-
-.author-info p {
-    font-size: 0.85rem;
-    color: #718096;
-    line-height: 1.4;
-}
-
-.company-badge {
-    background: linear-gradient(135deg, #ef4444, #dc2626);
-    color: #ffffff;
-    padding: 0.4rem 0.8rem;
-    border-radius: 12px;
-    font-size: 0.75rem;
-    font-weight: 600;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GenAI Tech Innovations — Extended Qualtrics &amp; QuestionPro Delivery Team</title>
+<meta name="description" content="GenAI Tech Innovations plugs into your Market Research agency or insight team as a dedicated implementation bench, covering survey programming, dashboarding, and full insights team support, backed by 15+ years inside the Qualtrics ecosystem.">
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XS07DH6G3L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XS07DH6G3L');
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #14181f;
+    --ink-soft: #3c4350;
+    --paper: #f6f4ee;
+    --panel: #ffffff;
+    --accent: #2e5d50;
+    --accent-soft: #e4ece7;
+    --line: #d9d4c8;
+    --muted: #6b6558;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "IBM Plex Sans", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 32px; }
+  h1, h2, h3 {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    margin: 0;
+  }
+  .eyebrow {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12px;
+    letter-spacing: 0.14em;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
+    color: var(--accent);
+  }
+  a { color: inherit; }
+  .mono { font-family: "IBM Plex Mono", monospace; }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .testimonials-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-    
-    .testimonial-card {
-        padding: 1.5rem;
-    }
-    
-    .testimonial-author {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1rem;
-    }
-    
-    .quote-mark {
-        font-size: 2.5rem;
-        left: -0.25rem;
-        top: -0.75rem;
-    }
-    
-    .testimonial-text {
-        margin-left: 0.5rem;
-    }
-}
+  /* NAV */
+  nav {
+    position: sticky; top: 0; z-index: 20;
+    background: rgba(246,244,238,0.92);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid var(--line);
+  }
+  nav .wrap { display: flex; align-items: center; justify-content: space-between; padding: 18px 32px; }
+  .brand { display: flex; align-items: center; text-decoration: none; }
+  .brand img { height: 34px; width: auto; display: block; }
+  .nav-links { display: flex; gap: 32px; list-style: none; margin: 0; padding: 0; }
+  .nav-links a { text-decoration: none; font-size: 14.5px; color: var(--ink-soft); }
+  .nav-links a:hover { color: var(--accent); }
+  .nav-cta {
+    font-size: 14px; font-weight: 500; text-decoration: none;
+    border: 1px solid var(--ink); padding: 9px 18px; border-radius: 2px;
+  }
+  .nav-cta:hover { background: var(--ink); color: var(--paper); }
 
-/* Hover animations for individual cards */
-.testimonial-card:nth-child(odd):hover {
-    transform: translateY(-8px) rotate(1deg);
-}
+  /* HERO */
+  .hero { padding: 88px 0 64px; border-bottom: 1px solid var(--line); }
+  .hero-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 64px; align-items: start; }
+  .hero h1 { font-size: 46px; line-height: 1.12; margin: 18px 0 22px; }
+  .hero p.subhead { font-size: 18px; color: var(--ink-soft); max-width: 46ch; margin: 0 0 32px; }
+  .cta-row { display: flex; gap: 14px; flex-wrap: wrap; }
+  .btn {
+    display: inline-block; padding: 13px 26px; font-size: 14.5px; font-weight: 500;
+    text-decoration: none; border-radius: 2px; border: 1px solid transparent;
+  }
+  .btn-primary { background: var(--ink); color: var(--paper); }
+  .btn-primary:hover { background: var(--accent); }
+  .btn-secondary { border-color: var(--ink); color: var(--ink); }
+  .btn-secondary:hover { border-color: var(--accent); color: var(--accent); }
 
-.testimonial-card:nth-child(even):hover {
-    transform: translateY(-8px) rotate(-1deg);
-}
+  /* Signature: delivery desk conversation */
+  .conversation {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .conversation-head {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 16px 20px; border-bottom: 1px solid var(--line);
+  }
+  .conversation-head .peer {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 14.5px; font-weight: 500; color: var(--ink);
+  }
+  .peer-dot {
+    width: 8px; height: 8px; border-radius: 50%; background: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-soft);
+  }
+  .conversation-head .status-label {
+    font-family: "IBM Plex Mono", monospace; font-size: 11.5px; text-transform: uppercase;
+    letter-spacing: 0.04em; color: var(--muted);
+  }
+  .conversation-body {
+    padding: 22px 20px; display: flex; flex-direction: column; gap: 12px;
+    max-height: 460px; overflow-y: auto; overflow-x: hidden;
+    scroll-behavior: smooth;
+    transition: opacity 0.35s ease;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .conversation-body::-webkit-scrollbar { display: none; }
+  .conversation.is-resetting .conversation-body { opacity: 0; }
+  .bubble {
+    max-width: 84%; padding: 11px 15px; border-radius: 12px; font-size: 14.5px; line-height: 1.5;
+    opacity: 0; transform: translateY(8px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+  }
+  .bubble.is-visible { opacity: 1; transform: translateY(0); }
+  .bubble-client {
+    align-self: flex-start;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    color: var(--ink-soft);
+    border-bottom-left-radius: 3px;
+  }
+  .bubble-gti {
+    align-self: flex-end;
+    background: var(--accent-soft);
+    color: var(--ink);
+    border-bottom-right-radius: 3px;
+  }
+  .bubble-gti .check { color: var(--accent); font-weight: 600; margin-right: 3px; }
+  .typing-indicator {
+    align-self: flex-end;
+    display: none;
+    align-items: center; gap: 4px;
+    background: var(--accent-soft);
+    padding: 12px 16px; border-radius: 12px; border-bottom-right-radius: 3px;
+  }
+  .typing-indicator.is-visible { display: flex; }
+  .typing-indicator span {
+    width: 5px; height: 5px; border-radius: 50%; background: var(--accent);
+    opacity: 0.5;
+    animation: typing-bounce 1s infinite ease-in-out;
+  }
+  .typing-indicator span:nth-child(2) { animation-delay: 0.15s; }
+  .typing-indicator span:nth-child(3) { animation-delay: 0.3s; }
+  @keyframes typing-bounce {
+    0%, 60%, 100% { transform: translateY(0); opacity: 0.5; }
+    30% { transform: translateY(-3px); opacity: 1; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .bubble { transition: none; opacity: 1; transform: none; }
+    .typing-indicator { display: none !important; }
+  }
 
-.testimonial-card.featured:hover {
-    transform: translateY(-8px) rotate(0deg) scale(1.02);
-}        
+  /* SYSTEMS ARCHITECTURE DIAGRAM */
+  .arch-diagram {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 12px;
+  }
+  .arch-diagram svg { width: 100%; height: auto; display: block; }
+  .arch-lines path {
+    fill: none; stroke: var(--line); stroke-width: 1.6;
+  }
+  .arch-arrow { fill: var(--muted); }
+  .arch-loop-frame {
+    fill: none; stroke: var(--line); stroke-width: 1.4; stroke-dasharray: 4 4;
+  }
+  .arch-loop-chip { fill: var(--paper); stroke: var(--line); stroke-width: 1.2; }
+  .arch-chip-text {
+    font-family: "IBM Plex Mono", monospace; font-size: 11px; letter-spacing: 0.04em; fill: var(--muted);
+  }
+  .arch-box {
+    fill: var(--paper); stroke: var(--line); stroke-width: 1.4;
+    transition: fill 0.25s ease, stroke 0.25s ease;
+  }
+  .arch-agent { fill: #eef2f0; }
+  .arch-router { fill: var(--accent-soft); }
+  .arch-context { fill: #f3f1ea; stroke-dasharray: 3 3; }
+  .arch-store { fill: #f3f1ea; stroke-dasharray: 3 3; }
+  .arch-action { fill: var(--paper); }
+  .arch-dashboard { fill: var(--ink); }
+  .arch-dashboard + text { fill: var(--paper); }
+  .arch-text {
+    font-family: "IBM Plex Sans", sans-serif; font-size: 13px; fill: var(--ink); font-weight: 500;
+  }
+  .arch-text-sm {
+    font-family: "IBM Plex Sans", sans-serif; font-size: 11.5px; fill: var(--ink-soft); font-weight: 500;
+  }
+  .arch-label {
+    font-family: "IBM Plex Mono", monospace; font-size: 11px; fill: var(--muted);
+  }
+  .arch-actor circle, .arch-actor path {
+    fill: none; stroke: var(--muted); stroke-width: 1.6;
+  }
+  rect.arch-dashboard ~ text.arch-text-sm { fill: var(--paper); }
 
-/* Example of styling the outer container. 
-   This won't change the calendar's dark colors, 
-   but it will control the space around it. */
-.meetings-iframe-container {
-    /* Set a specific size if needed, though HubSpot often manages this */
-     width: 100%;    
-    height: auto;
-    
-    /* Add a clean, white background for the container */
-   background-color: #ffffff; 
-    
-    /* Add a border or box-shadow to make it look intentionally contained */
-     border: 1px solid #ddd;
-    border-radius: 8px; 
-     overflow: hidden; 
+  .pulse-dot { fill: var(--accent); filter: drop-shadow(0 0 4px var(--accent)); }
+
+  /* glow pulses timed as a percentage of the 9s motion loop */
+  .glow-1, .glow-2, .glow-3, .glow-4, .glow-5, .glow-6, .glow-context {
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+  }
+  .glow-1 { animation-name: glow-at-0; }
+  .glow-2 { animation-name: glow-at-22; }
+  .glow-3 { animation-name: glow-at-44; }
+  .glow-context { animation-name: glow-at-48; }
+  .glow-4 { animation-name: glow-at-63; }
+  .glow-5 { animation-name: glow-at-67; }
+  .glow-6 { animation-name: glow-at-98; }
+
+  @keyframes glow-at-0 {
+    0%, 4% { stroke: var(--accent); fill: var(--accent-soft); }
+    12% { stroke: var(--line); fill: var(--paper); }
+  }
+  @keyframes glow-at-22 {
+    34%, 40% { stroke: var(--accent); fill: var(--accent-soft); }
+    48% { stroke: var(--line); fill: #eef2f0; }
+  }
+  @keyframes glow-at-44 {
+    54%, 60% { stroke: var(--accent); fill: var(--accent-soft); }
+    68% { stroke: var(--line); fill: #eef2f0; }
+  }
+  @keyframes glow-at-48 {
+    58%, 66% { stroke: var(--accent); fill: var(--accent-soft); }
+    74% { stroke: var(--line); fill: #f3f1ea; }
+  }
+  @keyframes glow-at-63 {
+    70%, 76% { stroke: var(--accent); fill: var(--accent); }
+    84% { stroke: var(--line); fill: var(--accent-soft); }
+  }
+  @keyframes glow-at-67 {
+    86%, 93% { stroke: var(--accent); fill: var(--accent-soft); }
+    98% { stroke: var(--line); fill: var(--paper); }
+  }
+  @keyframes glow-at-98 {
+    97%, 100% { stroke: var(--accent); }
+    0% { stroke: var(--ink); }
+  }
+
+  .arch-caption {
+    margin-top: 18px; font-size: 14px; color: var(--muted);
+  }
+  .arch-caption a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .pulse-dot { display: none; }
+    .glow-1, .glow-2, .glow-3, .glow-4, .glow-5, .glow-6, .glow-context { animation: none; }
+    .arch-agent, .arch-router, .arch-action { fill: var(--accent-soft); }
+  }
+  @media (max-width: 760px) {
+    .arch-text, .arch-text-sm { font-size: 10px; }
+  }
+
+  /* PARTNER STRIP */
+  .partner-strip {
+    background: var(--accent-soft);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    padding: 48px 0;
+  }
+  .partner-inner {
+    display: flex; align-items: center; gap: 36px; flex-wrap: wrap;
+  }
+  .partner-logo { height: 34px; width: auto; flex-shrink: 0; }
+  .partner-text { flex: 1 1 380px; min-width: 260px; }
+  .partner-text .eyebrow { display: block; margin-bottom: 6px; }
+  .partner-text h3 { font-size: 20px; margin-bottom: 8px; }
+  .partner-text p { color: var(--ink-soft); font-size: 15px; margin: 0; max-width: 62ch; }
+  .partner-link {
+    font-family: "IBM Plex Mono", monospace; font-size: 13px; color: var(--accent);
+    text-decoration: underline; text-underline-offset: 2px; white-space: nowrap; flex-shrink: 0;
+  }
+  .partner-link:hover { color: var(--ink); }
+  @media (max-width: 700px) {
+    .partner-inner { flex-direction: column; align-items: flex-start; }
+  }
+
+  /* SECTION HEADERS */
+  .section { padding: 80px 0; border-bottom: 1px solid var(--line); }
+  .section-head { max-width: 640px; margin-bottom: 48px; }
+  .section-head .eyebrow { display: block; margin-bottom: 12px; }
+  .section-head h2 { font-size: 32px; margin-bottom: 14px; }
+  .section-head p { color: var(--ink-soft); font-size: 16.5px; margin: 0; }
+
+  /* SERVICES */
+  .service-list { display: grid; gap: 1px; background: var(--line); border: 1px solid var(--line); }
+  .service-card { background: var(--panel); padding: 36px 40px; display: grid; grid-template-columns: 200px 1fr; gap: 36px; }
+  .service-card .service-meta { }
+  .service-card .service-meta .eyebrow { display: block; margin-bottom: 10px; }
+  .service-card h3 { font-size: 22px; margin-bottom: 6px; }
+  .service-card .desc { color: var(--ink-soft); font-size: 15.5px; margin: 10px 0 0; max-width: 34ch; }
+  .service-card ul { list-style: none; margin: 4px 0 0; padding: 0; columns: 2; column-gap: 32px; }
+  .service-card ul li {
+    font-size: 15px; color: var(--ink-soft); padding: 9px 0 9px 18px; position: relative;
+    border-top: 1px solid var(--line); break-inside: avoid;
+  }
+  .service-card ul li:before {
+    content: ""; position: absolute; left: 0; top: 17px; width: 8px; height: 1px; background: var(--accent);
+  }
+  .service-card .tag {
+    display: inline-block; margin-top: 18px; font-family: "IBM Plex Mono", monospace;
+    font-size: 11.5px; letter-spacing: 0.04em; color: var(--accent);
+    background: var(--accent-soft); padding: 6px 12px; border-radius: 2px;
+  }
+  @media (max-width: 760px) {
+    .service-card { grid-template-columns: 1fr; }
+    .service-card ul { columns: 1; }
+    .hero-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ABOUT */
+  .about-grid { display: grid; grid-template-columns: 240px 1fr; gap: 48px; align-items: start; }
+  .about-grid img { width: 100%; border-radius: 3px; filter: grayscale(15%); border: 1px solid var(--line); }
+  .about-name { font-size: 26px; margin-bottom: 4px; }
+  .about-role { color: var(--accent); font-family: "IBM Plex Mono", monospace; font-size: 13px; margin-bottom: 20px; display: block; }
+  .about-grid p { color: var(--ink-soft); font-size: 16px; margin: 0 0 16px; max-width: 62ch; }
+  .credential-strip { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+  .credential-strip span {
+    font-family: "IBM Plex Mono", monospace; font-size: 12px; border: 1px solid var(--line);
+    padding: 7px 12px; border-radius: 2px; color: var(--ink-soft);
+  }
+
+  /* TESTIMONIALS */
+  .quote-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+  .quote-card { background: var(--panel); padding: 32px; }
+  .quote-card p.q { font-family: "Fraunces", serif; font-size: 18px; line-height: 1.5; margin: 0 0 18px; color: var(--ink); }
+  .quote-card .attr { font-size: 13.5px; color: var(--muted); }
+  .quote-card .attr strong { color: var(--ink-soft); display: block; font-weight: 500; }
+  .quote-card .attr a { color: var(--accent); font-size: 13px; text-decoration: underline; text-underline-offset: 2px; display: inline-block; margin-top: 6px; }
+  @media (max-width: 760px) { .quote-grid { grid-template-columns: 1fr; } }
+
+  /* CONTACT */
+  .contact { padding: 88px 0; text-align: center; }
+  .contact h2 { font-size: 34px; margin-bottom: 16px; }
+  .contact p { color: var(--ink-soft); font-size: 17px; max-width: 48ch; margin: 0 auto 36px; }
+  .contact-row { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+  footer { padding: 32px 0; text-align: center; font-size: 13px; color: var(--muted); }
+  footer a { color: var(--muted); text-decoration: underline; text-underline-offset: 2px; }
+  footer a:hover { color: var(--accent); }
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "GenAI Tech Innovations",
+  "url": "https://genaitechinnovations.com",
+  "logo": "https://genaitechinnovations.com/Images/GTI_logo.png",
+  "founder": {
+    "@type": "Person",
+    "name": "Arun Raj",
+    "jobTitle": "Qualtrics XM Solution Architect & Founder"
+  },
+  "description": "GenAI Tech Innovations plugs into Market Research agencies and insight teams as a dedicated implementation bench, covering survey programming, dashboarding, full insights team support, XM Agent implementation, paper survey digitization, and custom survey plugin development, backed by 15+ years inside the Qualtrics ecosystem.",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": "Market research agencies and insight teams"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/company/genai-tech-innovations/",
+    "https://www.linkedin.com/in/arun-raj-023b7836/"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Market Research Delivery & AI Solutions",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Extended Delivery Team for MR Agencies",
+          "description": "Survey programming and QC, dashboard build and reporting, full insights team support, Qualtrics to Salesforce integration, and custom implementation support across Qualtrics and QuestionPro."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "XM Agent Implementation",
+          "description": "Implementation of Qualtrics' built in XM Agents and custom OpenAI based agents, scoped and configured for real business use cases within the XM ecosystem."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Tools Built on the Pirai AI Platform",
+          "description": "Survey automation converting Word and PDF specifications into Qualtrics, QuestionPro, and 20+ platforms in minutes, plus Pirai AI Flow, a conversational Chrome extension for building Qualtrics dashboards."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Agent & Systems Engineering",
+          "description": "Custom agent development, Chrome extension development, workflow automation, and API integration work, from proof of concept to production."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Paper Survey Digitization",
+          "description": "In-house tooling that converts filled paper and postal survey forms into structured digital responses, importable into any survey platform."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Survey Plugin Development",
+          "description": "Custom survey plugins including a browser based voice response capture extension for QuestionPro, built and deployed inside the platform."
+        }
+      }
+    ]
+  }
 }
-    </style>
+</script>
 </head>
-<body>    
-    <!-- Fixed Header with Logo -->
-    <header class="fixed-header">
-        <div class="header-content">  
-            <a href="/" class="logo">             
-                <div class="logo-brand"> 
-                        <img src="https://genaitechinnovations.com/Images/GTI_logo.png" alt="Genai AI Logo" class="brand-logo">               
-                        <div class="brand-text">
-                            <span class="brand-name"><span style="color:#ef4444">GenAI</span> Tech Innovations</span>
-                            <span class="brand-tagline">Where AI Innovation Meets Real-World Impact</span>
-                        </div>     
-                </div>
-             </a>
-            <nav class="header-nav">
-                <a href="#hero">Home</a>
-                <a href="#innovations">Innovations</a>
-                <a href="#services">Services</a>
-                <a href="#about">About</a>
-                <a href="#testimonials">Recognition</a>                
-                <a href="#contact">Contact</a>
-            </nav>
-        </div>
-    </header>
+<body>
 
-    <!-- Animated Background -->
-    <div class="background-elements">
-        <div class="bg-network-container" id="bg-network-container"></div>
-        <div class="code-snippets" id="code-snippets"></div>
-        <div class="ripple-container" id="ripple-container"></div>
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#hero"><img src="https://genaitechinnovations.com/Images/GTI_logo.png" alt="GenAI Tech Innovations"></a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#architecture">Architecture</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#recognition">Recognition</a></li>
+    </ul>
+    <a class="nav-cta" href="#contact">Contact</a>
+  </div>
+</nav>
+
+<section class="hero" id="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Extended Delivery Team — Market Research Agencies &amp; Insight Teams</span>
+      <h1>Your extended Qualtrics &amp; QuestionPro delivery team</h1>
+      <p class="subhead">We plug into your Market Research agency or insight team as a dedicated implementation bench, covering survey programming, dashboarding, and full insights team support, backed by 15+ years inside the Qualtrics ecosystem.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#contact">Partner with us</a>
+        <a class="btn btn-secondary" href="#services">See what we do</a>
+      </div>
     </div>
-    <!-- Mouse follower -->
-    <div class="mouse-follower" id="mouse-follower"></div>    
+    <div class="conversation" id="conversation">
+      <div class="conversation-head">
+        <span class="peer"><span class="peer-dot"></span>GTI Delivery Desk</span>
+        <span class="status-label" id="convoStatus">Online</span>
+      </div>
+      <div class="conversation-body" id="conversationBody">
 
-    <!-- Hero Section test-->
-    <section class="hero" id="hero">
-        <div class="hero-content">            
-            <h1 class="hero-title fade-in fade-in-delay-2">
-                Where AI Innovation<br>
-                Meets Real-World Impact
-            </h1>
-            
-            <p class="hero-subtitle fade-in fade-in-delay-3">
-                We build AI solutions that work, prove their impact with real metrics, and share the results transparently. 
-                From enterprise agentic workflows to community-focused innovations, our work speaks louder than marketing promises.
-            </p>
-            
-            <div class="hero-cta fade-in fade-in-delay-4">
-                <a href="#contact" class="btn btn-primary">Partner with Us</a>
-                <a href="#innovations" class="btn btn-secondary">View Innovations</a>
-            </div>
+        <div class="bubble bubble-client" data-bubble>How fast can you turn around standard survey scripting?</div>
+        <div class="bubble bubble-gti" data-bubble data-reply>
+          <span class="check">✓</span> 48 hours for standard surveys — we use tools like Pirai AI to accelerate the build.
         </div>
-    </section>
 
-    <!-- Innovation Gallery -->
-    <section class="innovation-gallery" id="innovations">
-        <div class="gallery-container">
-            <div class="gallery-header fade-in">
-                <h2 class="gallery-title">Innovation Portfolio</h2>
-                <p class="gallery-subtitle">
-                    Real solutions with measurable impact. Each innovation solves actual problems 
-                    and creates value for enterprises and communities alike.
-                </p>
-            </div>
-
-            <div class="innovations-grid">
-                <!-- Survey Copilot -->
-                <div class="innovation-card fade-in fade-in-delay-2">
-                    <!-- <div class="card-icon secondary">🗣️</div> -->
-                    <div class="card-badge">World's First AI Survey Assistant</div>
-                    <h3 class="card-title">Survey Copilot</h3>
-                    <p class="card-description">
-                        Revolutionary Chrome extension that transforms survey responses. Speak your experience naturally, 
-                        get rich, authentic responses that help companies understand what you actually mean.
-                    </p>
-                    <a href="https://www.linkedin.com/pulse/from-survey-neurosis-chrome-web-store-building-worlds-arun-raj-uxvrc/?trackingId=%2B2K4VW7QT%2BSclvIZF2RgbQ%3D%3D" 
-                    target="_blank" class="innovation-link">
-                        Read the Story →
-                    </a>                     
-                    <!-- <div class="card-stats">
-                        <div class="stat">
-                            <span class="stat-value">Universal</span>
-                            <span class="stat-label">Platform Support</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-value">Voice → Rich</span>
-                            <span class="stat-label">Quality Transform</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-value">Firt to </span>
-                            <span class="stat-label">Market</span>
-                        </div>
-                    </div> -->
-                    <div class="card-tech">
-                        <span class="tech-tag">Chrome Extension</span>
-                        <span class="tech-tag">OpenAI</span>
-                        <span class="tech-tag">Voice API</span>
-                        <span class="tech-tag">Response Quality</span>
-                        <span class="tech-tag">Market First</span>
-                    </div>                    
-                   
-                </div>                
-                <!-- Master of Experience Agents Workflow Architect -->
-                <div class="innovation-card fade-in fade-in-delay-1">
-                    <!-- <div class="card-icon primary">🤖</div> -->
-                    <div class="card-badge">Qualtrics President Endorsed</div>
-                    <h3 class="card-title">Experience Management AI Pioneer</h3>
-                    <p class="card-description">
-                        AI-powered customer feedback systems that automatically turn survey responses into instant business actions. No more manual analysis - just immediate, smart results.
-                    </p>
-                    <a href="https://www.linkedin.com/pulse/from-survey-response-business-action-building-agentic-arun-raj-i0pyc/?trackingId=%2B2K4VW7QT%2BSclvIZF2RgbQ%3D%3D" 
-                    target="_blank" class="innovation-link">
-                        Read the Story →
-                    </a>                     
-                    <!-- <div class="card-stats">                        
-                        <div class="stat">
-                            <span class="stat-value">XM AI Pioneer</span>
-                            <span class="stat-label"></span>
-                        </div>                                          
-                    </div> -->
-                    <div class="card-tech">
-                        <span class="tech-tag">Qualtrics</span>
-                        <span class="tech-tag">OpenAI</span>
-                        <span class="tech-tag">Agentic AI</span>
-                        <span class="tech-tag">Dual Agents</span>
-                        <span class="tech-tag">RAG</span>
-                    </div>
-                </div>
-
-
-
-                <!-- Community AI Solutions -->
-                <div class="innovation-card fade-in fade-in-delay-3">
-                    <!-- <div class="card-icon tertiary">🎓</div> -->
-                    <div class="card-badge">NSW Community Impact</div>
-                    <h3 class="card-title">Heritage Language AI Tools</h3>
-                    <p class="card-description">
-                        Transforming how community language teachers work - turning 16 hours of manual lesson planning into 30 minutes of AI-assisted preparation.
-                    </p>
-                    <a href="https://www.linkedin.com/pulse/nsw-tamil-community-school-ai-prototype-from-8-hours-30-arun-raj-eduuc/?trackingId=%2B2K4VW7QT%2BSclvIZF2RgbQ%3D%3D" 
-                    target="_blank" class="innovation-link">
-                        Read the Story →
-                    </a>                     
-                    <!-- <div class="card-stats">
-                        <div class="stat">
-                            <span class="stat-value">16h → 30min</span>
-                            <span class="stat-label">Planning Time</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-value">800+</span>
-                            <span class="stat-label">Hours Saved/Year</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-value">100+</span>
-                            <span class="stat-label">Teachers Served</span>
-                        </div>
-                    </div> -->
-                    <div class="card-tech">
-                        <span class="tech-tag">RAG</span>
-                        <span class="tech-tag">GPT-4 Vision</span>
-                        <span class="tech-tag">Education</span>
-                        <span class="tech-tag">Community</span>
-                    </div>
-                </div>
-
-                <!-- SMB Digital Transformation -->
-                <div class="innovation-card fade-in fade-in-delay-4">
-                    <!-- <div class="card-icon quaternary">🏪</div> -->
-                    <div class="card-badge">5+ Years Active</div>
-                    <h3 class="card-title">SMB Digital Transformation</h3>
-                    <p class="card-description">
-                        Complete business platform for Kannukutty Organic Store. From MVP to 
-                        8,000+ orders with POS, inventory, and customer management.
-                    </p>
-                    <a href="https://www.linkedin.com/pulse/architect-visionary-building-kannukuttyins-mvp-arun-raj-kumaresan--tz06f/?trackingId=%2B2K4VW7QT%2BSclvIZF2RgbQ%3D%3D" 
-                    target="_blank" class="innovation-link">
-                        Read the Story →
-                    </a>                     
-                    <!-- <div class="card-stats">
-                        <div class="stat">
-                            <span class="stat-value">8,000+</span>
-                            <span class="stat-label">Orders Processed</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-value">5+</span>
-                            <span class="stat-label">Years Active</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-value">AWS</span>
-                            <span class="stat-label">Enterprise Scale</span>
-                        </div>
-                    </div> -->
-                    <div class="card-tech">
-                        <span class="tech-tag">Django</span>
-                        <span class="tech-tag">PostgreSQL</span>
-                        <span class="tech-tag">AWS</span>
-                        <span class="tech-tag">Full-Stack</span>
-                    </div>
-                </div>
-            </div>
+        <div class="bubble bubble-client" data-bubble>We need this taken from spec to a live survey and dashboard.</div>
+        <div class="bubble bubble-gti" data-bubble data-reply>
+          <span class="check">✓</span> Implementation — programming, QC, and launch, start to finish.
         </div>
-    </section>
 
-    <!-- About Section -->
-    <section class="about-section" id="about">
-        <div class="about-container">
-            <div class="about-header fade-in">
-                <h2 class="about-title">Meet The Innovation Catalyst</h2>
-                <p class="about-subtitle">
-                    I live the entire solution lifecycle - from identifying human problems to building technical solutions to measuring real-world impact. Whether it's reducing 16 hours to 30 minutes for teachers, creating the world's first AI survey assistant, or developing breakthrough workflows that earned Qualtrics President recognition, I own every step of the innovation journey.
-                </p>
-            </div>
-
-            <div class="about-content fade-in fade-in-delay-1">
-                <div class="about-story">
-                    <div class="story-header">
-                        <div class="story-avatar">
-                            <img src="https://genaitechinnovations.com/Images/founder_profile.jpg" alt="Arun Raj" width="150" height="150" style="border-radius: 20px;"/>
-                        </div>
-                        <div class="story-intro">
-                            <h3>Arun Raj</h3>
-                            <div class="story-tagline">Founder & Global GTM Partner</div>
-                        </div>
-                    </div>
-                    
-                    <div class="story-content">
-                        <p>
-                            Personal challenges become breakthrough innovations. My wife's lesson planning frustration transformed into 800+ hours saved annually across NSW schools. Identifying the need for intelligent automation led to creating the world's first AI survey copilot. Business process observations became enterprise platforms processing thousands of orders.
-                        </p>
-                        <p>
-                            Every solution starts with a real human need and scales to measurable global impact. This approach has earned recognition from industry leaders and delivered tangible results across education, enterprise, and community sectors.
-                        </p>
-                    </div>
-
-                    <div class="story-quote">
-                        I don't just build AI solutions - I transform how organizations think about what's possible.
-                    </div>
-
-                    <div class="story-credentials">
-                        <span class="credential-tag">Global GTM Partner</span>
-                        <span class="credential-tag">GenAI Engineer</span>
-                        <span class="credential-tag">XM Solutions Architect</span>
-                        <span class="credential-tag">Full-Stack Developer</span>
-                        <span class="credential-tag">15+ Years CX Tech Expert</span>
-                        <span class="credential-tag">Applied AI Architect</span>
-                    </div>
-                </div>
-            </div>
+        <div class="bubble bubble-client" data-bubble>Who's designing how it all fits together?</div>
+        <div class="bubble bubble-gti" data-bubble data-reply>
+          <span class="check">✓</span> Solution architecture — the platform design, mapped before we build.
         </div>
-    </section> 
 
-    <!-- Services Section -->
-    <section class="services-section" id="services">
-        <div class="services-container">
-            <div class="services-header fade-in">
-                <h2 class="services-title">Complete AI & Partnership Solutions</h2>
-                <p class="services-subtitle">
-                    From cutting-edge AI implementations to strategic market partnerships, we deliver 
-                    the full spectrum of services to accelerate your business growth and technology transformation.
-                </p>
-            </div>
-
-            <div class="services-grid fade-in fade-in-delay-1">
-                <div class="service-card">
-                    <div class="service-icon quaternary">🤝</div>
-                    <h3 class="service-title">Strategic Channel Partnerships</h3>
-                    <p class="service-description">
-                        We partner with innovative startups and established product companies to accelerate ANZ market entry. 
-                        From <a href="https://campuskloud.io/" target="_blank" style="color:#ef4444; text-decoration: none; font-weight: bold;">Campus Cloud's</a> 
-                        education solutions to <a href="https://piraiai.com/" target="_blank" style="color:#ef4444; text-decoration: none; font-weight: bold;">Pirai AI's</a> 
-                        intelligent survey automation (converts Word/PDF specs to Qualtrics, QuestionPro, REDCap, Google Forms & 20+ platforms in minutes—50+ languages), 
-                        we provide the <strong>AI expertise, technical integration, and local market knowledge</strong> for successful expansion.
-                    </p>
-                    <ul class="service-features">
-                        <li>ANZ Market Entry & Localization (Go-to-market strategy, compliance, pricing)</li>
-                        <li>AI Integration for Partner Products (Embed GenAI, agentic workflows, RAG)</li>
-                        <li>Technical Partnership Programs (Co-development, white-label solutions)</li>
-                        <li>Channel Partner Enablement (Training, sales support, implementation guidance)</li>
-                    </ul>
-                    <div class="service-badge">
-                        <span class="badge-icon">🌏</span>
-                        <span>ANZ Market Enabler</span>
-                    </div>
-                </div>        
-                <div class="service-card">
-                    <div class="service-icon breakthrough">🧠</div>
-                    <h3 class="service-title">XM AI Transformation Partner</h3>
-                    <p class="service-description">
-                        Pioneering AI-powered Experience Management through industry-first agentic workflows and RAG implementations. 
-                        Helping XM partners and enterprises transform customer feedback into automated business actions with 
-                        <strong>proven, Qualtrics-endorsed methodologies.</strong>
-                    </p>
-                    <ul class="service-features">
-                        <li>Expert XM Platform Implementation (Qualtrics, QuestionPro, Medallia)</li>
-                        <li>Agentic AI Workflow Design & Integration</li>
-                        <li>RAG-Powered Experience Intelligence</li>
-                        <li>Bespoke Solution Development & Technical Advisory</li>
-                    </ul>
-                    <div class="service-badge">
-                        <span class="badge-icon">🏆</span>
-                        <span>Qualtrics President Endorsed</span>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon tertiary">🛠️</div>
-                    <h3 class="service-title">AI Agency & Intelligent Automation</h3>
-                    <p class="service-description">
-                        End-to-end AI implementation services—from strategy to production. We build autonomous AI agents, 
-                        intelligent workflows, and RAG-powered systems that automate complex business processes with 
-                        <strong>measurable ROI and proven reliability.</strong>
-                    </p>
-                    <ul class="service-features">
-                        <li>Agentic AI Development (Autonomous business agents & multi-agent systems)</li>
-                        <li>RAG Implementation & Knowledge Base Engineering</li>
-                        <li>AI Workflow Automation (N8N, LangChain, custom orchestration)</li>
-                        <li>GenAI Integration (GPT-4, Claude, Gemini into your products)</li>
-                        <li>POC to Production Pipeline (Fast validation to scalable deployment)</li>
-                        <li>Ongoing Support & Optimization (Managed AI services & continuous improvement)</li>
-                    </ul>
-                    <div class="service-badge">
-                        <span class="badge-icon">⚡</span>
-                        <span>Production-Ready AI Solutions</span>
-                    </div>
-                </div>        
-                <div class="service-card">
-                    <div class="service-icon primary">🔬</div>
-                    <h3 class="service-title">Strategic AI Innovation Partnership</h3>
-                    <p class="service-description">
-                        Co-develop industry-first AI capabilities that differentiate your product and dominate your market. 
-                        We partner with forward-thinking companies to pioneer breakthrough AI use cases, establish thought 
-                        leadership, and <strong>create competitive moats before competitors catch up.</strong>
-                    </p>
-                    <ul class="service-features">
-                        <li>Co-Innovation & Joint Product Development (AI features for your platform)</li>
-                        <li>Industry-First Use Case Design (Pioneer new AI applications in your sector)</li>
-                        <li>Thought Leadership Co-Creation (Articles, case studies, conference presentations)</li>
-                        <li>Long-term Strategic Advisory (Ongoing AI roadmap & architecture guidance)</li>
-                    </ul>
-                    <div class="service-badge">
-                        <span class="badge-icon">🚀</span>
-                        <span>Innovation Partner</span>
-                    </div>
-                </div>
-            </div>
+        <div class="bubble bubble-client" data-bubble>It needs to talk to Salesforce too.</div>
+        <div class="bubble bubble-gti" data-bubble data-reply>
+          <span class="check">✓</span> Integration planning — scoped and mapped up front.
         </div>
-    </section>
-    <!-- Testimonials Section -->
-    <section class="testimonials-section" id="testimonials">
-        <div class="testimonials-container">
-            <div class="testimonials-header fade-in">
-                <h2 class="testimonials-title">What Industry Leaders Say</h2>
-                <p class="testimonials-subtitle">
-                    From Qualtrics executives to community leaders, here's what clients and partners say about our innovations.
-                </p>
-            </div>
 
-            <div class="testimonials-grid fade-in fade-in-delay-1">
-                <!-- Qualtrics President -->
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <div class="quote-mark">"</div>
-                        <p class="testimonial-text">Love this ARUN RAJ</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-info">
-                            <h4>Brad Anderson</h4>
-                            <p>President, Products, UX, Engineering and Ecosystem at Qualtrics</p>
-                        </div>
-                        <div class="company-logo">
-                            <span class="company-badge">Qualtrics</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Solution Engineering Head -->
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <div class="quote-mark">"</div>
-                        <p class="testimonial-text">Thanks for the clear and straightforward explanation of the Qualtrics Experience Agent use case</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-info">
-                            <h4>Maxime Armante</h4>
-                            <p>Head of Solution Engineering - EMEA at Qualtrics</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- AI/ML Expert -->
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <div class="quote-mark">"</div>
-                        <p class="testimonial-text">Love this application of LLMs, a perfect use case that doesn't just save time for the teacher but also helps preserve the language. Well done!</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-info">
-                            <h4>Alyona Medelyan, PhD</h4>
-                            <p>CEO & Founder @Thematic | 20yrs+ ML & NLP experience</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Enterprise Client -->
-                <div class="testimonial-card enterprise">
-                    <div class="testimonial-content">
-                        <div class="quote-mark">"</div>
-                        <p class="testimonial-text">Unique combination of Clarity, Curiosity and Commitment with Entrepreneurship Mindset... His Technical Leadership is commendable. You've brought soul and coherence to a vision.</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-info">
-                            <h4>Srinivasan Balasubramanian</h4>
-                            <p>Digital Health Leader | Wellness Coach | Kannukutty.in Co-founder</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Technology Executive -->
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <div class="quote-mark">"</div>
-                        <p class="testimonial-text">Thank you for the simple yet powerful articulation of experience agents. The investments in Qualtrics platform is helping bring together valuable agentic experiences.</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-info">
-                            <h4>Madhu Dutta</h4>
-                            <p>Technology Executive | Mentor | Speaker</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Community Impact -->
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <div class="quote-mark">"</div>
-                        <p class="testimonial-text">This is a great use case of AI enabling volunteering and community welfare! Will be sharing this to Tamil community members in Victoria.</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-info">
-                            <h4>Dinesh Dhanraj</h4>
-                            <p>Program Manager @ Infosys</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="bubble bubble-client" data-bubble>What if we need something the platform doesn't do out of the box?</div>
+        <div class="bubble bubble-gti" data-bubble data-reply>
+          <span class="check">✓</span> Middleware, built inside the Qualtrics ecosystem, not bolted on.
         </div>
-    </section>
-    <!-- Contact Section -->
-    <section class="contact-section" id="contact">
-        <div class="contact-container"> 
-            <h2 class="contact-title fade-in fade-in-delay-1">Ready to Transform What's Possible?</h2>
-            <p class="contact-subtitle fade-in fade-in-delay-2">
-                Whether you need breakthrough AI solutions, strategic partnerships, or innovations that deliver measurable impact, let's start the conversation.
-            </p>
 
-            <div class="contact-email-container fade-in fade-in-delay-3">
-                <a href="mailto:arun@genaitechinnovations.com" class="contact-email">
-                    <span class="email-icon">📧</span>
-                    <span>arun@genaitechinnovations.com</span>
-                </a>
-            </div>
-            <div>
-                <!-- Start of Meetings Embed Script -->
-                <!-- <div class="meetings-iframe-container" data-src="https://meetings-ap1.hubspot.com/arun-raj?embed=true"></div>
-                <script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script> --> 
-                <!-- End of Meetings Embed Script --> 
-            </div>
-            &nbsp;
-            <div class="contact-links fade-in fade-in-delay-4">
-                <a href="https://www.linkedin.com/in/arun-raj-023b7836/" target="_blank" class="contact-link">
-                    <span>💼</span>
-                    <span>Connect on LinkedIn</span>
-                </a>
-                <a href="https://www.linkedin.com/in/arun-raj-023b7836/recent-activity/articles/" target="_blank" class="contact-link">
-                    <span>📚</span>
-                    <span>Read My Articles</span>
-                </a>
-            </div>
+        <div class="bubble bubble-client" data-bubble>And once it's live?</div>
+        <div class="bubble bubble-gti" data-bubble data-reply>
+          <span class="check">✓</span> Support and testing — we stay on it after launch.
         </div>
-    </section>
 
-    <script>
-        // Create network nodes and connections for background
-        function createNetwork() {
-            const networkContainer = document.getElementById('bg-network-container');
-            const nodeCount = 15;
+        <div class="typing-indicator" id="typingIndicator"><span></span><span></span><span></span></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-            // Create nodes
-            for (let i = 0; i < nodeCount; i++) {
-                const node = document.createElement('div');
-                node.classList.add('bg-network-node');
-                
-                const x = Math.random() * 100;
-                const y = Math.random() * 100;
-                
-                node.style.left = x + '%';
-                node.style.top = y + '%';
-                node.style.animationDelay = Math.random() * 20 + 's';
-                
-                networkContainer.appendChild(node);
-            }
-        }
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Services</span>
+      <h2>Delivery, agents, and data capture</h2>
+      <p>How we work with Market Research agencies and insight teams, from day to day programming support to agent implementation, tooling, and data capture that keep your team moving faster than headcount allows.</p>
+    </div>
 
-        // Create floating code snippets
-        function createCodeSnippets() {
-            const codeContainer = document.getElementById('code-snippets');
-            const codeSnippets = [
-                // AI & Technology
-                'Agentic AI', 'RAG', 'LangChain', 'LangGraph', 'GenAI', 'LLM', 'NLP', 'Vision AI',
-                'Speech to Text', 'Text to Speech', 'OpenAI', 'Chrome Extension', 'AI Copilot',
-                
-                // Qualtrics & XM
-                'Qualtrics', 'XM Workflows', 'Experience Intelligence', 'Survey Automation',
-                'Customer Experience', 'XM Platform', 'Power BI', 'Tableau',
-                
-                // Development & Tools
-                'Full-Stack Developer', 'Python', 'Django', 'FastAPI', 'N8N', 'Flowwise',
-                'AWS', 'PostgreSQL', 'API Integration',
-                
-                // Business & Strategy
-                'Global GTM Partner', 'Strategic AI Consultant', 'Solution Architecture',
-                'ANZ Market Expansion', 'Channel Partnerships', 'Enterprise AI',
-                
-                // Industries & Applications
-                'EdTech', 'Community AI', 'Heritage Language', 'Survey Intelligence',
-                'Business Automation', 'Digital Transformation'
-            ];
+    <div class="service-list">
 
-            for (let i = 0; i < 10; i++) {
-                const snippet = document.createElement('div');
-                snippet.classList.add('code-snippet');
-                snippet.textContent = codeSnippets[Math.floor(Math.random() * codeSnippets.length)];
-                
-                snippet.style.left = Math.random() * 100 + '%';
-                snippet.style.animationDelay = Math.random() * 25 + 's';
-                snippet.style.animationDuration = (Math.random() * 15 + 20) + 's';
-                
-                codeContainer.appendChild(snippet);
-            }
-        }
+      <div class="service-card">
+        <div class="service-meta">
+          <span class="eyebrow">Delivery</span>
+          <h3>Extended team for MR agencies</h3>
+          <p class="desc">We work as an extension of your team inside your existing delivery and insights workflows.</p>
+        </div>
+        <div>
+          <ul>
+            <li>Survey programming and QC across Qualtrics and QuestionPro, including complex logic, quotas, piping, and multi-language instruments</li>
+            <li>Dashboard build and reporting, including Qualtrics Dashboards and CX / BX iQ, delivered stakeholder ready</li>
+            <li>Full insights team support, covering end to end project delivery alongside your researchers</li>
+            <li>Qualtrics and Salesforce integration, including data sync and triggered, CRM linked feedback actions</li>
+            <li>Custom implementation support, including bespoke scripting, API work, and platform migrations</li>
+            <li>Qualtrics XM Solution Architect certified, with deep hands on ecosystem experience</li>
+          </ul>
+          <span class="tag">Qualtrics President endorsed</span>
+        </div>
+      </div>
 
-        // Mouse follower
-        function initMouseFollower() {
-            const follower = document.getElementById('mouse-follower');
-            let mouseX = 0, mouseY = 0;
-            let followerX = 0, followerY = 0;
+      <div class="service-card">
+        <div class="service-meta">
+          <span class="eyebrow">Tooling</span>
+          <h3>Tools built for research teams</h3>
+          <p class="desc">We partner with Pirai AI and build on their platform to deliver surveys up to 10x faster.</p>
+        </div>
+        <div>
+          <ul>
+            <li>Survey automation with Pirai AI, converting Word and PDF specifications into Qualtrics, QuestionPro, and 20+ platforms in minutes</li>
+            <li>Pirai AI Flow, a conversational Chrome extension for Qualtrics dashboards, describe the widgets, filters, and layout you need and Flow builds them live, automating 50 to 60 percent of dashboard configuration</li>
+            <li>Qualtrics API Toolkit, a Chrome extension developed by GTI for the Pirai AI team to speed up API driven survey workflows</li>
+            <li>Custom internal tools and Chrome extensions built for research operations</li>
+          </ul>
+          <span class="tag">Built on the Pirai AI platform</span>
+        </div>
+      </div>
 
-            document.addEventListener('mousemove', (e) => {
-                mouseX = e.clientX;
-                mouseY = e.clientY;
-                follower.style.opacity = '0.7';
-            });
+      <div class="service-card">
+        <div class="service-meta">
+          <span class="eyebrow">Engineering</span>
+          <h3>Agent &amp; systems development</h3>
+          <p class="desc">When an off the shelf platform feature is not enough, we build what is needed.</p>
+        </div>
+        <div>
+          <ul>
+            <li>Custom agent development, including survey QA agents and response analysis agents</li>
+            <li>Chrome extension development, from concept through to Chrome Web Store release</li>
+            <li>Workflow automation and API integration work across your research and CRM stack</li>
+            <li>Fast proof of concept to production delivery</li>
+          </ul>
+          <span class="tag">Full stack engineering support</span>
+        </div>
+      </div>
 
-            document.addEventListener('mouseleave', () => {
-                follower.style.opacity = '0';
-            });
+      <div class="service-card">
+        <div class="service-meta">
+          <span class="eyebrow">Agents</span>
+          <h3>XM Agent implementation</h3>
+          <p class="desc">Safe, production ready agent setup inside the Qualtrics XM ecosystem, built around your business use case.</p>
+        </div>
+        <div>
+          <ul>
+            <li>Implementation of Qualtrics' built in XM Agents, scoped and configured for a real business use case rather than default settings</li>
+            <li>Custom agents built with OpenAI models where a use case needs logic beyond what ships out of the box</li>
+            <li>Agent setup designed to sit safely inside the XM ecosystem, respecting data boundaries and platform permissions</li>
+            <li>Use case scoping and rollout, from a single workflow to agents running across a full program</li>
+          </ul>
+          <span class="tag">Qualtrics native and custom agents</span>
+        </div>
+      </div>
 
-            function animateFollower() {
-                const speed = 0.1;
-                followerX += (mouseX - followerX) * speed;
-                followerY += (mouseY - followerY) * speed;
-                
-                follower.style.left = followerX - 10 + 'px';
-                follower.style.top = followerY - 10 + 'px';
-                
-                requestAnimationFrame(animateFollower);
-            }
-            
-            animateFollower();
-        }        
+      <div class="service-card">
+        <div class="service-meta">
+          <span class="eyebrow">Data Capture</span>
+          <h3>Paper survey digitization</h3>
+          <p class="desc">In-house tooling that turns filled paper and postal survey forms into digital responses, automatically.</p>
+        </div>
+        <div>
+          <ul>
+            <li>Converts filled paper and postal survey forms into structured digital responses, without manual data entry</li>
+            <li>Supports teams running both online and offline data collection, so paper and digital responses feed into one dataset</li>
+            <li>Digitized responses can be imported into any survey platform, Qualtrics, QuestionPro, or others</li>
+            <li>Built in-house, tuned for the accuracy and QA standards research grade data requires</li>
+          </ul>
+          <span class="tag">Automated paper to digital capture</span>
+        </div>
+      </div>
 
-        // Create ripple effects
-        function createRipples() {
-            const rippleContainer = document.getElementById('ripple-container');
-            
-            setInterval(() => {
-                const ripple = document.createElement('div');
-                ripple.classList.add('ripple');
-                
-                ripple.style.left = Math.random() * 100 + '%';
-                ripple.style.top = Math.random() * 100 + '%';
-                ripple.style.width = '20px';
-                ripple.style.height = '20px';
-                
-                rippleContainer.appendChild(ripple);
-                
-                // Remove ripple after animation
-                setTimeout(() => {
-                    ripple.remove();
-                }, 4000);
-            }, 3000);
-        }
+      <div class="service-card">
+        <div class="service-meta">
+          <span class="eyebrow">Plugins</span>
+          <h3>Survey plugin development</h3>
+          <p class="desc">Custom plugins that extend what Qualtrics and QuestionPro can capture, built and deployed inside the platform itself.</p>
+        </div>
+        <div>
+          <ul>
+            <li>Voice Response Capture for QuestionPro, a browser based audio recorder plugin letting respondents record 20 second voice responses without leaving the survey</li>
+            <li>Built on the MediaRecorder API with intelligent chunking, audio stored securely inside the survey platform, no file uploads or external services</li>
+            <li>Backend processing engine extracts, reconstructs, and converts audio into analysis ready MP3 files, organized by respondent</li>
+            <li>Deployed at scale, proven across 300+ live survey respondents</li>
+          </ul>
+          <span class="tag">Built inside the platform, no added infrastructure</span>
+        </div>
+      </div>
 
-        // Header scroll effect
-        function initHeaderScroll() {
-            const header = document.querySelector('.fixed-header');
-            let lastScroll = 0;
+    </div>
+  </div>
+</section>
 
-            window.addEventListener('scroll', () => {
-                const currentScroll = window.pageYOffset;
+<section class="partner-strip" id="partner">
+  <div class="wrap partner-inner">
+    <img class="partner-logo" src="https://piraiai.com/logo.png" alt="Pirai AI">
+    <div class="partner-text">
+      <span class="eyebrow">Partnership</span>
+      <h3>Implementation partner of Pirai AI</h3>
+      <p>We're an implementation partner of Pirai AI and build on their platform to accelerate delivery on every engagement. Word and PDF specifications become live surveys across Qualtrics, QuestionPro, and 25+ other platforms in minutes, and Pirai AI Flow turns plain language into working Qualtrics dashboards.</p>
+    </div>
+    <a class="partner-link" href="https://piraiai.com" target="_blank" rel="noopener">Visit piraiai.com →</a>
+  </div>
+</section>
 
-                if (currentScroll > 100) {
-                    header.style.background = 'rgba(255, 255, 255, 0.95)';
-                    header.style.backdropFilter = 'blur(20px)';
-                    header.style.boxShadow = '0 2px 20px rgba(0,0,0,0.1)';
-                } else {
-                    header.style.background = 'rgba(255, 255, 255, 0.95)';
-                    header.style.backdropFilter = 'blur(20px)';
-                    header.style.boxShadow = 'none';
-                }
+<section class="section" id="architecture">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Systems Architecture</span>
+      <h2>From survey response to business action</h2>
+      <p>This is the architecture pattern we publish and build from: a survey response reasoning through an agent loop and landing as a real action, not just a row in a dataset.</p>
+    </div>
 
-                lastScroll = currentScroll;
-            });
-        }
+    <div class="arch-diagram" id="archDiagram">
+      <svg viewBox="0 0 1150 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram of a survey response flowing through an agent reasoning loop into business actions and a live dashboard">
 
-        // Section intersection observer for entrance animations
-        function initSectionAnimations() {
-            const sections = document.querySelectorAll('.hero, .innovation-gallery, .about-section, .services-section, .contact-section');
-            
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('section-enter');
-                    }
-                });
-            }, { threshold: 0.1 });
+        <defs>
+          <marker id="arrowHead" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+            <path d="M0,0 L6,3 L0,6 Z" class="arch-arrow" />
+          </marker>
+        </defs>
 
-            sections.forEach(section => {
-                observer.observe(section);
-            });
-        }
+        <!-- reasoning loop container -->
+        <rect class="arch-loop-frame" x="300" y="150" width="450" height="300" rx="16" />
+        <rect class="arch-loop-chip" x="470" y="138" width="150" height="26" rx="13" />
+        <text x="545" y="155" class="arch-chip-text" text-anchor="middle">Agent Reasoning Loop</text>
 
-        // Smooth scrolling for navigation
-        function initSmoothScrolling() {
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
-                    if (target) {
-                        target.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }
-                });
-            });
-        }
+        <!-- connecting lines -->
+        <g class="arch-lines">
+          <path d="M95,230 H110" marker-end="url(#arrowHead)" />
+          <path d="M260,230 H330" marker-end="url(#arrowHead)" />
+          <path d="M440,230 H520" marker-end="url(#arrowHead)" />
+          <path d="M630,230 H700" marker-end="url(#arrowHead)" />
 
-        // Initialize all animations and interactions
-        document.addEventListener('DOMContentLoaded', function() {
-            createNetwork();
-            createCodeSnippets();
-            createRipples();
-            initHeaderScroll();
-            initMouseFollower();
-            initSectionAnimations();
-            initSmoothScrolling();
+          <!-- agent 2 down into context cluster -->
+          <path d="M575,255 V282" />
+          <path d="M575,282 H485 V300" marker-end="url(#arrowHead)" />
+          <path d="M575,282 H675 V300" marker-end="url(#arrowHead)" />
+          <path d="M485,346 V368" />
+          <path d="M675,346 V368" />
+          <path d="M485,368 H545" />
+          <path d="M615,368 H675" />
 
-            // Add intersection observer for fade-in animations
-            const observerOptions = {
-                threshold: 0.1,
-                rootMargin: '0px 0px -50px 0px'
-            };
+          <!-- router fan-out -->
+          <path d="M770,230 H795 V113 H820" marker-end="url(#arrowHead)" />
+          <path d="M770,230 H795 V191 H820" marker-end="url(#arrowHead)" />
+          <path d="M770,230 H795 V269 H820" marker-end="url(#arrowHead)" />
+          <path d="M770,230 H795 V347 H820" marker-end="url(#arrowHead)" />
 
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.style.animationPlayState = 'running';
-                    }
-                });
-            }, observerOptions);
+          <!-- action bus into dashboard -->
+          <path d="M960,113 H1000" />
+          <path d="M960,191 H1000" />
+          <path d="M960,269 H1000" />
+          <path d="M960,347 H1000" />
+          <path d="M1000,113 V347" />
+          <path d="M1000,230 H1030" marker-end="url(#arrowHead)" />
+        </g>
 
-            // Observe all fade-in elements
-            document.querySelectorAll('.fade-in').forEach(el => {
-                observer.observe(el);
-            });
-        });
-    </script>
+        <!-- moving pulse -->
+        <circle class="pulse-dot" r="6">
+          <animateMotion
+            path="M110,230 H440 H630 H770 H1000 H1030"
+            dur="9s"
+            repeatCount="indefinite" />
+        </circle>
+
+        <!-- Customer -->
+        <g class="arch-node arch-actor" transform="translate(40,205)">
+          <circle cx="15" cy="8" r="8" />
+          <path d="M2,42 Q2,20 15,20 Q28,20 28,42" />
+          <text x="15" y="60" class="arch-label" text-anchor="middle">Customer</text>
+        </g>
+
+        <!-- Survey Response -->
+        <rect class="arch-box glow-1" x="110" y="205" width="150" height="50" rx="6" />
+        <text x="185" y="235" class="arch-text" text-anchor="middle">Survey Response</text>
+
+        <!-- XM Agent 1 -->
+        <rect class="arch-box arch-agent glow-2" x="330" y="205" width="110" height="50" rx="6" />
+        <text x="385" y="235" class="arch-text" text-anchor="middle">XM Agent 1</text>
+
+        <!-- XM Agent 2 -->
+        <rect class="arch-box arch-agent glow-3" x="520" y="205" width="110" height="50" rx="6" />
+        <text x="575" y="235" class="arch-text" text-anchor="middle">XM Agent 2</text>
+
+        <!-- Satellite context nodes -->
+        <rect class="arch-box arch-context glow-context" x="400" y="300" width="170" height="46" rx="6" />
+        <text x="485" y="328" class="arch-text-sm" text-anchor="middle">Reasoning &amp; Memory</text>
+
+        <rect class="arch-box arch-context glow-context" x="590" y="300" width="170" height="46" rx="6" />
+        <text x="675" y="328" class="arch-text-sm" text-anchor="middle">Embedded Data (RAG)</text>
+
+        <ellipse class="arch-box arch-store glow-context" cx="580" cy="390" rx="55" ry="22" />
+        <text x="580" y="395" class="arch-text-sm" text-anchor="middle">XMD</text>
+
+        <!-- Router -->
+        <rect class="arch-box arch-router glow-4" x="700" y="205" width="70" height="50" rx="6" />
+        <text x="735" y="235" class="arch-text-sm" text-anchor="middle">Router</text>
+
+        <!-- Action nodes -->
+        <rect class="arch-box arch-action glow-5" x="820" y="90" width="140" height="46" rx="6" />
+        <text x="890" y="118" class="arch-text-sm" text-anchor="middle">Email Task</text>
+
+        <rect class="arch-box arch-action glow-5" x="820" y="168" width="140" height="46" rx="6" />
+        <text x="890" y="196" class="arch-text-sm" text-anchor="middle">CRM Trigger</text>
+
+        <rect class="arch-box arch-action glow-5" x="820" y="246" width="140" height="46" rx="6" />
+        <text x="890" y="274" class="arch-text-sm" text-anchor="middle">Ticket</text>
+
+        <rect class="arch-box arch-action glow-5" x="820" y="324" width="140" height="46" rx="6" />
+        <text x="890" y="352" class="arch-text-sm" text-anchor="middle">Other Operations</text>
+
+        <!-- Dashboard -->
+        <rect class="arch-box arch-dashboard glow-6" x="1030" y="195" width="80" height="70" rx="6" />
+        <text x="1070" y="224" class="arch-text-sm" text-anchor="middle">Live</text>
+        <text x="1070" y="240" class="arch-text-sm" text-anchor="middle">Dashboard</text>
+      </svg>
+    </div>
+
+    <p class="arch-caption">Read the architecture in full: <a href="https://www.linkedin.com/pulse/from-survey-response-business-action-building-agentic-arun-raj-i0pyc/">From Survey Response to Business Action</a> and <a href="https://www.linkedin.com/pulse/bringing-rag-qualtrics-first-retrieval-augmented-ai-workflow-arun-raj-ik8bc">Bringing RAG to Qualtrics</a>.</p>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="wrap about-grid">
+    <img src="https://genaitechinnovations.com/Images/founder_profile.jpg" alt="Arun Raj">
+    <div>
+      <span class="eyebrow">About</span>
+      <h2 class="about-name">Arun Raj</h2>
+      <span class="about-role">Founder, GenAI Tech Innovations</span>
+      <p>Fifteen years inside customer and market research technology, including a background at Ipsos, followed by hands on delivery work across the Qualtrics ecosystem as a certified XM Solution Architect. GTI grew out of that delivery experience, built specifically to give Market Research agencies and insight teams the extra bench they need without adding permanent headcount.</p>
+      <p>GTI partners with Pirai AI and builds on their platform to deliver surveys up to 10x faster, from converting Word and PDF specifications into Qualtrics, QuestionPro, and 20+ other platforms in minutes, to Pirai AI Flow, a conversational Chrome extension that builds Qualtrics dashboards live from plain English, automating 50 to 60 percent of configuration without ever reading response data. GTI also developed the Qualtrics API Toolkit Chrome extension for the Pirai AI team.</p>
+      <div class="credential-strip">
+        <span>Qualtrics XM Solution Architect</span>
+        <span>QuestionPro</span>
+        <span>Medallia</span>
+        <span>15+ years CX / MR technology</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="recognition">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Recognition</span>
+      <h2>What partners say</h2>
+    </div>
+    <div class="quote-grid">
+      <div class="quote-card">
+        <p class="q">"Love this."</p>
+        <div class="attr"><strong>Brad Anderson</strong>President, Products, UX, Engineering and Ecosystem at Qualtrics<br><a href="https://www.linkedin.com/pulse/from-survey-response-business-action-building-agentic-arun-raj-i0pyc/">On the agentic AI workflow above →</a></div>
+      </div>
+      <div class="quote-card">
+        <p class="q">"Thanks for the clear and straightforward explanation of the Qualtrics Experience Agent use case."</p>
+        <div class="attr"><strong>Maxime Armante</strong>Head of Solution Engineering, EMEA at Qualtrics</div>
+      </div>
+      <div class="quote-card">
+        <p class="q">"A unique combination of clarity, curiosity, and commitment with an entrepreneurship mindset. His technical leadership is commendable."</p>
+        <div class="attr"><strong>Srinivasan Balasubramanian</strong>Digital Health Leader, Kannukutty.in Co-founder</div>
+      </div>
+      <div class="quote-card">
+        <p class="q">"Thank you for the simple yet powerful articulation of experience agents."</p>
+        <div class="attr"><strong>Madhu Dutta</strong>Technology Executive</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <span class="eyebrow">Contact</span>
+    <h2>Let's talk about your delivery capacity</h2>
+    <p>If your team is stretched on Qualtrics or QuestionPro implementation, dashboards, or integrations, we can start as an extended team within days.</p>
+    <div class="contact-row">
+      <a class="btn btn-primary" href="mailto:arun@genaitechinnovations.com">arun@genaitechinnovations.com</a>
+      <a class="btn btn-secondary" href="https://www.linkedin.com/in/arun-raj-023b7836/">Connect on LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  GenAI Tech Innovations — Sydney, Australia · <a href="https://www.linkedin.com/company/genai-tech-innovations/">LinkedIn</a>
+</footer>
+
+<script>
+(function () {
+  var panel = document.getElementById('conversation');
+  var body = document.getElementById('conversationBody');
+  var statusLabel = document.getElementById('convoStatus');
+  var typingIndicator = document.getElementById('typingIndicator');
+  var bubbles = Array.prototype.slice.call(body.querySelectorAll('[data-bubble]'));
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function finishInstantly() {
+    bubbles.forEach(function (b) { b.classList.add('is-visible'); });
+    if (statusLabel) statusLabel.textContent = 'Online';
+  }
+
+  function runSequence() {
+    var t = 0;
+    var pauseAfterClient = 1000;
+    var typingDuration = 1300;
+    var pauseAfterReply = 700;
+    var pauseBetweenLoops = 2600;
+    var fadeOutDuration = 400;
+
+    function scrollToEl(el) {
+      var target = el.offsetTop + el.offsetHeight - body.clientHeight;
+      body.scrollTo({ top: Math.max(target, 0), behavior: 'smooth' });
+    }
+
+    bubbles.forEach(function (bubble) {
+      var isReply = bubble.hasAttribute('data-reply');
+
+      if (isReply) {
+        setTimeout(function () {
+          body.insertBefore(typingIndicator, bubble);
+          typingIndicator.classList.add('is-visible');
+          scrollToEl(typingIndicator);
+        }, t);
+        t += typingDuration;
+        setTimeout(function () {
+          typingIndicator.classList.remove('is-visible');
+          bubble.classList.add('is-visible');
+          scrollToEl(bubble);
+        }, t);
+        t += pauseAfterReply;
+      } else {
+        setTimeout(function () {
+          bubble.classList.add('is-visible');
+          scrollToEl(bubble);
+        }, t);
+        t += pauseAfterClient;
+      }
+    });
+
+    // Hold the finished conversation, fade it out, then loop.
+    setTimeout(function () {
+      panel.classList.add('is-resetting');
+      setTimeout(function () {
+        bubbles.forEach(function (b) { b.classList.remove('is-visible'); });
+        typingIndicator.classList.remove('is-visible');
+        body.scrollTo({ top: 0, behavior: 'auto' });
+        panel.classList.remove('is-resetting');
+        runSequence();
+      }, fadeOutDuration);
+    }, t + pauseBetweenLoops);
+  }
+
+  if (reduceMotion) {
+    finishInstantly();
+    return;
+  }
+
+  var started = false;
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting && !started) {
+        started = true;
+        runSequence();
+        observer.disconnect();
+      }
+    });
+  }, { threshold: 0.3 });
+  observer.observe(panel);
+})();
+</script>
 </body>
 </html>
-
-
