@@ -314,28 +314,39 @@
     .arch-text, .arch-text-sm { font-size: 10px; }
   }
 
-  /* PARTNER STRIP */
-  .partner-strip {
-    background: var(--accent-soft);
-    border-top: 1px solid var(--line);
-    border-bottom: 1px solid var(--line);
-    padding: 48px 0;
+  /* PARTNERSHIPS */
+  .partners-section { background: var(--accent-soft); }
+  .partner-grid {
+    display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px;
   }
-  .partner-inner {
-    display: flex; align-items: center; gap: 36px; flex-wrap: wrap;
+  .partner-card {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 10px;
+    padding: 32px;
   }
-  .partner-logo { height: 34px; width: auto; flex-shrink: 0; }
-  .partner-text { flex: 1 1 380px; min-width: 260px; }
-  .partner-text .eyebrow { display: block; margin-bottom: 6px; }
-  .partner-text h3 { font-size: 20px; margin-bottom: 8px; }
-  .partner-text p { color: var(--ink-soft); font-size: 15px; margin: 0; max-width: 62ch; }
+  .partner-logo { height: 32px; width: auto; margin-bottom: 18px; display: block; }
+  .partner-wordmark {
+    font-family: "IBM Plex Sans", sans-serif; font-weight: 600; font-size: 22px;
+    color: #1b3380; margin-bottom: 18px; display: block;
+  }
+  .partner-wordmark .pro { color: #1b87e6; }
+  .partner-card h3 { font-size: 19px; margin-bottom: 10px; }
+  .partner-card p { color: var(--ink-soft); font-size: 15px; margin: 0 0 16px; }
+  .partner-list {
+    list-style: none; margin: 0 0 18px; padding: 0;
+    display: flex; flex-wrap: wrap; gap: 8px;
+  }
+  .partner-list li {
+    font-family: "IBM Plex Mono", monospace; font-size: 12px; color: var(--ink-soft);
+    background: var(--accent-soft); border: 1px solid var(--line);
+    padding: 6px 11px; border-radius: 2px;
+  }
   .partner-link {
     font-family: "IBM Plex Mono", monospace; font-size: 13px; color: var(--accent);
-    text-decoration: underline; text-underline-offset: 2px; white-space: nowrap; flex-shrink: 0;
+    text-decoration: underline; text-underline-offset: 2px; white-space: nowrap;
   }
   .partner-link:hover { color: var(--ink); }
-  @media (max-width: 700px) {
-    .partner-inner { flex-direction: column; align-items: flex-start; }
+  @media (max-width: 760px) {
+    .partner-grid { grid-template-columns: 1fr; }
   }
 
   /* SECTION HEADERS */
@@ -692,15 +703,39 @@
   </div>
 </section>
 
-<section class="partner-strip" id="partner">
-  <div class="wrap partner-inner">
-    <img class="partner-logo" src="https://piraiai.com/logo.png" alt="Pirai AI">
-    <div class="partner-text">
-      <span class="eyebrow">Partnership</span>
-      <h3>Implementation partner of Pirai AI</h3>
-      <p>We're an implementation partner of Pirai AI and build on their platform to accelerate delivery on every engagement. Word and PDF specifications become live surveys across Qualtrics, QuestionPro, and 25+ other platforms in minutes, and Pirai AI Flow turns plain language into working Qualtrics dashboards.</p>
+<section class="section partners-section" id="partners">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Partnerships</span>
+      <h2>Platforms we build on and implement for</h2>
+      <p>We're an implementation partner across the platforms our clients actually run on, not locked to a single vendor.</p>
     </div>
-    <a class="partner-link" href="https://piraiai.com" target="_blank" rel="noopener">Visit piraiai.com →</a>
+
+    <div class="partner-grid">
+
+      <div class="partner-card">
+        <img class="partner-logo" src="https://piraiai.com/logo.png" alt="Pirai AI">
+        <h3>Implementation partner of Pirai AI</h3>
+        <p>We build on the Pirai AI platform to accelerate delivery on every engagement. Word and PDF specifications become live surveys across Qualtrics, QuestionPro, and 25+ other platforms in minutes, and Pirai AI Flow turns plain language into working Qualtrics dashboards.</p>
+        <a class="partner-link" href="https://piraiai.com" target="_blank" rel="noopener">Visit piraiai.com →</a>
+      </div>
+
+      <div class="partner-card">
+        <span class="partner-wordmark">Question<span class="pro">Pro</span></span>
+        <h3>Implementation partner of QuestionPro ANZ</h3>
+        <p>We deliver hands on implementation support across the QuestionPro platform, from first build to live launch.</p>
+        <ul class="partner-list">
+          <li>Survey Scripting</li>
+          <li>Dashboard</li>
+          <li>Launch Preparation</li>
+          <li>Guidance</li>
+          <li>Demo</li>
+          <li>Custom Implementation Support</li>
+        </ul>
+        <a class="partner-link" href="https://www.questionpro.com" target="_blank" rel="noopener">Visit questionpro.com →</a>
+      </div>
+
+    </div>
   </div>
 </section>
 
