@@ -323,7 +323,11 @@
     background: var(--panel); border: 1px solid var(--line); border-radius: 10px;
     padding: 32px;
   }
-  .partner-logo { height: 32px; width: auto; margin-bottom: 18px; display: block; }
+  .partner-logo-row { display: flex; align-items: center; gap: 10px; margin-bottom: 18px; }
+  .partner-logo { height: 32px; width: auto; display: block; margin-bottom: 0; }
+  .partner-wordmark-text {
+    font-family: "Fraunces", serif; font-weight: 600; font-size: 19px; color: var(--ink);
+  }
   .partner-wordmark {
     font-family: "IBM Plex Sans", sans-serif; font-weight: 600; font-size: 22px;
     color: #1b3380; margin-bottom: 18px; display: block;
@@ -743,7 +747,10 @@
     <div class="partner-grid">
 
       <div class="partner-card">
-        <img class="partner-logo" src="https://piraiai.com/logo.png" alt="Pirai AI">
+        <div class="partner-logo-row">
+          <img class="partner-logo" src="https://piraiai.com/logo.png" alt="Pirai AI">
+          <span class="partner-wordmark-text">Pirai AI</span>
+        </div>
         <h3>Implementation partner of Pirai AI</h3>
         <p>We build on the Pirai AI platform to accelerate delivery on every engagement. Word and PDF specifications become live surveys across Qualtrics, QuestionPro, and 25+ other platforms in minutes, and Pirai AI Flow turns plain language into working Qualtrics dashboards.</p>
         <a class="partner-link" href="https://piraiai.com" target="_blank" rel="noopener">Visit piraiai.com →</a>
